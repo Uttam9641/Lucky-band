@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Band Royal Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom Theme Variables */
+        :root {
+            --bg-dark-nav: #0b0f19;    
+            --bg-dark-footer: #050811; 
+            --dropdown-bg: #111622;
+            --royal-gold: #f39c12;     
+            --royal-card: #111622;     
+            --text-white: #ffffff;
+            --text-muted: #8fa0b5;     
+            --card-text-bright: #e2e8f0; 
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0c101b; 
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ==========================================
+           1. NAVBAR STYLES
+           ========================================== */
+        .custom-navbar {
+            background-color: var(--bg-dark-nav) !important;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(243, 156, 18, 0.15);
+        }
+
+        .nav-link {
+            color: var(--text-white) !important;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 8px 15px !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--royal-gold) !important;
+        }
+
+        /* Custom Dropdown Styling */
+        .custom-dropdown-menu {
+            background-color: var(--dropdown-bg) !important;
+            border: 1px solid #222b3c !important;
+            border-radius: 6px;
+            padding: 10px 0;
+            min-width: 270px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .custom-dropdown-menu .dropdown-item {
+            color: var(--text-white) !important;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .custom-dropdown-menu .dropdown-item:hover {
+            background-color: #1a2233 !important;
+            color: var(--royal-gold) !important;
+        }
+
+        .custom-dropdown-menu .dropdown-item.highlighted-item {
+            background-color: #1e2430 !important;
+            color: var(--royal-gold) !important;
+        }
+
+        .icon-w {
+            width: 25px;
+            margin-right: 10px;
+            font-size: 16px;
+            color: var(--royal-gold);
+        }
+
+        .dropdown-toggle::after {
+            vertical-align: middle;
+        }
+
+        .navbar-toggler {
+            border-color: var(--royal-gold) !important;
+        }
+        .navbar-toggler-icon {
+            filter: invert(74%) sepia(51%) saturate(2363%) hue-rotate(1deg) brightness(101%) contrast(92%);
+        }
+
+        /* ==========================================
+           2. FLOATING WHATSAPP BUTTON
+           ========================================== */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #fff !important;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse-green 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .style-img {
+            transition: transform 0.4s ease;
+        }
+        .style-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* ==========================================
+           3. FOOTER STYLES
+           ========================================== */
+        .custom-footer {
+            background-color: var(--bg-dark-footer);
+            padding-top: 70px;
+            margin-top: 80px;
+        }
+
+        .footer-heading {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--royal-gold);
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 35px;
+            height: 2px;
+            background-color: var(--royal-gold);
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--royal-gold);
+            padding-left: 5px;
+        }
+
+        /* Footer Info Contact Custom Design */
+        .contact-item-text {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-info-icon {
+            color: var(--royal-gold);
+            font-size: 14px;
+            margin-right: 12px;
+            margin-top: 4px;
+            width: 16px;
+            text-align: center;
+        }
+
+        .social-box-container {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-box {
+            width: 40px;
+            height: 40px;
+            background-color: #111622;
+            border: 1px solid #222b3c;
+            color: #ffffff !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-box:hover {
+            background-color: var(--royal-gold);
+            color: #000000 !important;
+            border-color: var(--royal-gold);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #141b29;
+            margin-top: 50px;
+            padding: 25px 0;
+            font-size: 13px;
+            color: #62758d;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Lucky Band Logo" height="50" class="d-inline-block align-top">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li>
+                                <a class="dropdown-item" href="barat.html">
+                                    <i class="fas fa-car icon-w"></i> Royal Baarat & Transport
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Gangaarti.html">
+                                    <i class="fas fa-gopuram icon-w"></i> Grand Entry & Themes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Orchestra.html">
+                                    <i class="fas fa-music icon-w"></i> Live Entertainment & Music
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Pre-Wedding.html">
+                                    <i class="fas fa-magic icon-w"></i> Creative Decor & Styling
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item highlighted-item" href="food-Counters.html">
+                                    <i class="fas fa-utensils icon-w"></i> Food & Catering Counters
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Lucky%20Band,%20I%20want%20to%20enquire%20about%20your%20services." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+
+<section class="stylish-recent-work py-5">
+    <div class="container py-lg-5">
+        
+    <div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
+    <div class="col-lg-5">
+        <div class="stylish-image-frame">
+            <img src="path/to/fruit-chaat-counter.jpg" alt="Exotic Fruit Chaat Counter" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Fruit+Chaat+Counter';">
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="stylish-content-box ps-lg-4">
+            <span class="content-mini-tag text-uppercase">Fresh & Healthy Culinary Art</span>
+            <h3 class="service-display-title mt-2 mb-3">Exotic Fruit <span class="gold-serif">Chaat Counter</span></h3>
+            <p class="service-main-para">Guests ko ek refreshing aur healthy treat dene ke liye hamara Exotic Fruit Chaat Counter ekdum perfect option hai. Isme desh-videsh se mangwaye gaye taaza fruits (jaise kiwi, strawberry, grapes, aur premium apples) ko live counter par client ki choice ke mutabik cut kiya jata hai. Hamare gourmet chefs ke special secret masalon aur honey-lemon dressing ke sath ise ek shahi dhang se serve kiya jata hai, jo bade-bado ka dil jeet leta hai.</p>
+            
+            <div class="stylish-pointers-block mt-4">
+                <h5 class="pointers-title text-uppercase">Pointers</h5>
+                <ul class="list-unstyled custom-pointers-list mt-2">
+                    <li><i class="fa-solid fa-apple-whole text-danger"></i> Wide Range of Imported & Seasonal Fresh Fruits</li>
+                    <li><i class="fa-solid fa-jar text-warning"></i> Live Custom Dressing With Royal Spice Infusions</li>
+                    <li><i class="fa-solid fa-ice-cream text-info"></i> Hygenic Ice-Bed Displays For Ultimate Crisp Freshness</li>
+                </ul>
+            </div>
+            
+            <div class="mt-4 pt-2">
+                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
+    <div class="col-lg-7 order-2 order-lg-1">
+        <div class="stylish-content-box">
+            <span class="content-mini-tag text-uppercase">Traditional Royal Refreshment</span>
+            <h3 class="service-display-title mt-2 mb-3">Traditional Shahi <span class="gold-serif">Paan Boutique</span></h3>
+            <p class="service-main-para">Indian weddings ka jashn bina paan ke adhoora hai. Hamara Shahi Paan Counter ek traditional boutique setup hai jahan veteran paan masters (banarasi paan experts) live paan taiyar karte hain. Standard meetha paan se lekar modern trending flavors jaise Ice Paan, Fire Paan, Chocolate Paan aur Royal Gulkand Paan tak, hum ek vishal menu offer karte hain jo khane ke baad aapke guests ka muah mitha kar dega aur unhe ek rajwadi experience dega.</p>
+            
+            <div class="stylish-pointers-block mt-4">
+                <h5 class="pointers-title text-uppercase">Pointers</h5>
+                <ul class="list-unstyled custom-pointers-list mt-2">
+                    <li><i class="fa-solid fa-leaf text-success"></i> Authentic Banarasi & Maghai Premium Betel Leaves</li>
+                    <li><i class="fa-solid fa-fire text-danger"></i> Interactive Live Counters Featuring Ice & Fire Paan Acts</li>
+                    <li><i class="fa-solid fa-box-tissue text-warning"></i> Silver Foil (Chandi Work) Coated Luxury Gulkand Stuffs</li>
+                </ul>
+            </div>
+            
+            <div class="mt-4 pt-2">
+                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 order-1 order-lg-2">
+        <div class="stylish-image-frame">
+            <img src="path/to/paan-counter.jpg" alt="Traditional Shahi Paan Counter" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Shahi+Paan+Counter';">
+        </div>
+    </div>
+</div>
+
+<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
+    <div class="col-lg-5">
+        <div class="stylish-image-frame">
+            <img src="path/to/mocktail-bar.jpg" alt="Live Mocktail and Mojito Bar" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Live+Mocktail+Bar';">
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="stylish-content-box ps-lg-4">
+            <span class="content-mini-tag text-uppercase">Premium Interactive Beverages</span>
+            <h3 class="service-display-title mt-2 mb-3">Live Mocktail <span class="gold-serif">& Mojito Bar</span></h3>
+            <p class="service-main-para">Aapke event me high-end corporate bar touch add karne ke liye hamara Live Mocktail Bar ek absolute show-stopper hai. Professional flair bartenders (jugglers) live guest interaction ke sath signature non-alcoholic drinks jaise Mint Mojitos, Blue Lagoon, Watermelon Freezers aur Cranberry Blasts shake karte hain. Glassware styling aur led smoke bar aesthetics ke sath yeh counter young generation aur premium guests ke liye sabse bada attraction point banta hai.</p>
+            
+            <div class="stylish-pointers-block mt-4">
+                <h5 class="pointers-title text-uppercase">Pointers</h5>
+                <ul class="list-unstyled custom-pointers-list mt-2">
+                    <li><i class="fa-solid fa-glass-water-droplet text-info"></i> Professional Juggling & Flair Bartending Crew Acts</li>
+                    <li><i class="fa-solid fa-wine-glass text-primary"></i> Premium Glassware Styling & Neon Colored Blends</li>
+                    <li><i class="fa-solid fa-lemon text-success"></i> Fresh Mint, Berries & Exotic Fruit Syrups Menu</li>
+                </ul>
+            </div>
+            
+            <div class="mt-4 pt-2">
+                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row align-items-center g-5 stylish-work-row">
+    <div class="col-lg-7 order-2 order-lg-1">
+        <div class="stylish-content-box">
+            <span class="content-mini-tag text-uppercase">Earthy Desi Flavors & Sweets</span>
+            <h3 class="service-display-title mt-2 mb-3">Tandoori Chai <span class="gold-serif">& Matka Kulfi Corner</span></h3>
+            <p class="service-main-para">Winter weddings aur traditional gatherings ke liye hamara live Tandoori Kulhad Chai corner logo ka sabse pasandida spot hai. Bhatti me tapte hue mitti ke kulhad me jab keshari chai ka tadka lagta hai, toh uski bheeni-bheeni khushbu pure venue me phail jati hai. Iske sath hi hum traditional dessert lovers ke liye authentic thandi-thandi Shahi Matka Kulfi aur Rabdi counters setup karte hain, jo pure menu ko ek royal desi heritage finish pradan karta hai.</p>
+            
+            <div class="stylish-pointers-block mt-4">
+                <h5 class="pointers-title text-uppercase">Pointers</h5>
+                <ul class="list-unstyled custom-pointers-list mt-2">
+                    <li><i class="fa-solid fa-fire-burner text-danger"></i> Live Tandoor Clay-Pot Tadka Kulhad Chai Experience</li>
+                    <li><i class="fa-solid fa-mound text-warning"></i> Authentic Kesar Pista Matka Kulfi & Laccha Rabdi</li>
+                    <li><i class="fa-solid fa-mug-hot text-light"></i> Eco-Friendly Mitti Elements For Pure Organic Ambiance</li>
+                </ul>
+            </div>
+            
+            <div class="mt-4 pt-2">
+                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 order-1 order-lg-2">
+        <div class="stylish-image-frame">
+            <img src="path/to/tandoori-chai.jpg" alt="Tandoori Chai and Matka Kulfi Counter" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Tandoori+Chai+Corner';">
+        </div>
+    </div>
+</div>
+
+    </div>
+</section>
+
+
+
+<style> 
+  /* ==========================================
+   STYLISH RECENT WORK SECTION (PREMIUM THEME)
+   ========================================== */
+.stylish-recent-work {
+    background-color: #050811; 
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Gold Heading Style */
+.stylish-recent-work .section-display-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #d4af37; 
+    letter-spacing: 1px;
+}
+
+.stylish-recent-work .stylish-gold-line {
+    width: 60px;
+    height: 2px;
+    background: #d4af37;
+}
+
+/* FIX: Image Frame Taller (Lambi) Layout Setup */
+.stylish-image-frame {
+    border: 1.5px solid #d4af37; 
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #050811;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.stylish-image-frame img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 20; /* Made image ratio taller (lambi) as requested */
+    min-height: 480px;     /* Desktop scaling safe check parameter */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.stylish-work-row:hover .stylish-image-frame img {
+    transform: scale(1.03); 
+}
+
+/* Typography Content Styling */
+.stylish-content-box .content-mini-tag {
+    color: #d4af37;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    display: block;
+}
+
+.stylish-content-box .service-display-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+.stylish-content-box .gold-serif {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #d4af37;
+    font-weight: 400;
+}
+
+.stylish-content-box .service-main-para {
+    color: #a0aec0;
+    font-size: 0.95rem;
+    line-height: 1.8; /* Increased spacing for larger content block readability */
+    text-align: justify;
+    font-weight: 300;
+}
+
+/* Pointers Area */
+.stylish-pointers-block .pointers-title {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.custom-pointers-list li {
+    font-size: 0.92rem;
+    color: #e2e8f0;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+}
+
+.custom-pointers-list li i {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* Enquire Now Button */
+.btn-stylish-enquire {
+    background-color: #d4af37;
+    color: #050811 !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    padding: 12px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #d4af37;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-stylish-enquire:hover {
+    background-color: transparent;
+    color: #d4af37 !important;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+@media (max-width: 991px) {
+    .stylish-recent-work .section-display-heading {
+        font-size: 2.3rem;
+    }
+    .stylish-content-box .service-display-title {
+        font-size: 1.8rem;
+    }
+    .stylish-image-frame {
+        margin-bottom: 10px;
+    }
+    .stylish-image-frame img {
+        min-height: auto; /* Fluid adjustment for mobile viewing */
+        aspect-ratio: 4 / 5;
+    }
+}
+</style>
+
+
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <div class="mb-3">
+                        <img src="logo.png" alt="Lucky Band Logo" height="50">
+                    </div>
+                    <p class="footer-text pe-lg-2">
+                        We turn grand celebrations into majestic realities. Specializing in elite wedding bands, luxury processions, high-end thematic entries, and live orchestras.
+                    </p>
+                    <div class="social-box-container mt-4">
+                        <a href="#" class="social-box"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 ps-lg-4">
+                    <h5 class="footer-heading text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="#">Our Pricing</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading text-uppercase">Our Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="barat.html">Royal Baarat & Brass Band</a></li>
+                        <li><a href="Gangaarti.html">Ganga Aarti & Adiyogi Themes</a></li>
+                        <li><a href="Orchestra.html">Live Orchestra & Stars DJ</a></li>
+                        <li><a href="Pre-Wedding.html">Pre-Wedding & Stage Decor</a></li>
+                        <li><a href="food-Counters.html">Exotic Food Counters</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading text-uppercase">Contact Info</h5>
+                    <ul class="list-unstyled footer-links d-block">
+                        <li class="mb-3">
+                            <i class="fa-solid fa-location-dot footer-info-icon"></i>
+                            <span class="contact-item-text">Main Office Street, Near Royal Plaza, City, State - XXXXXX</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-phone footer-info-icon"></i>
+                            <span class="contact-item-text">+91 98765 43210<br>+91 91234 56789</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-envelope footer-info-icon"></i>
+                            <span class="contact-item-text">info@luckyband.com<br>events@luckyband.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center footer-bottom">
+                    <p class="mb-0">&copy; 2026 Lucky Band. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Band Royal Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* Custom Theme Variables */
+        :root {
+            --bg-dark-nav: #0b0f19;    
+            --bg-dark-footer: #050811; 
+            --dropdown-bg: #111622;
+            --royal-gold: #f39c12;     
+            --royal-card: #111622;     
+            --text-white: #ffffff;
+            --text-muted: #8fa0b5;     
+            --card-text-bright: #e2e8f0; 
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0c101b; 
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ==========================================
+           1. NAVBAR STYLES
+           ========================================== */
+        .custom-navbar {
+            background-color: var(--bg-dark-nav) !important;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(243, 156, 18, 0.15);
+        }
+
+        .nav-link {
+            color: var(--text-white) !important;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 8px 15px !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--royal-gold) !important;
+        }
+
+        /* Custom Dropdown Styling */
+        .custom-dropdown-menu {
+            background-color: var(--dropdown-bg) !important;
+            border: 1px solid #222b3c !important;
+            border-radius: 6px;
+            padding: 10px 0;
+            min-width: 270px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .custom-dropdown-menu .dropdown-item {
+            color: var(--text-white) !important;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .custom-dropdown-menu .dropdown-item:hover {
+            background-color: #1a2233 !important;
+            color: var(--royal-gold) !important;
+        }
+
+        .custom-dropdown-menu .dropdown-item.highlighted-item {
+            background-color: #1e2430 !important;
+            color: var(--royal-gold) !important;
+        }
+
+        .icon-w {
+            width: 25px;
+            margin-right: 10px;
+            font-size: 16px;
+            color: var(--royal-gold);
+        }
+
+        .dropdown-toggle::after {
+            vertical-align: middle;
+        }
+
+        .navbar-toggler {
+            border-color: var(--royal-gold) !important;
+        }
+        .navbar-toggler-icon {
+            filter: invert(74%) sepia(51%) saturate(2363%) hue-rotate(1deg) brightness(101%) contrast(92%);
+        }
+
+        /* ==========================================
+           2. FLOATING WHATSAPP BUTTON
+           ========================================== */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #fff !important;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse-green 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .style-img {
+            transition: transform 0.4s ease;
+        }
+        .style-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* ==========================================
+           3. FOOTER STYLES
+           ========================================== */
+        .custom-footer {
+            background-color: var(--bg-dark-footer);
+            padding-top: 70px;
+            margin-top: 80px;
+        }
+
+        .footer-heading {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--royal-gold);
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 35px;
+            height: 2px;
+            background-color: var(--royal-gold);
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--royal-gold);
+            padding-left: 5px;
+        }
+
+        /* Footer Info Contact Custom Design */
+        .contact-item-text {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-info-icon {
+            color: var(--royal-gold);
+            font-size: 14px;
+            margin-right: 12px;
+            margin-top: 4px;
+            width: 16px;
+            text-align: center;
+        }
+
+        .social-box-container {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-box {
+            width: 40px;
+            height: 40px;
+            background-color: #111622;
+            border: 1px solid #222b3c;
+            color: #ffffff !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-box:hover {
+            background-color: var(--royal-gold);
+            color: #000000 !important;
+            border-color: var(--royal-gold);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #141b29;
+            margin-top: 50px;
+            padding: 25px 0;
+            font-size: 13px;
+            color: #62758d;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Lucky Band Logo" height="50" class="d-inline-block align-top">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li>
+                                <a class="dropdown-item" href="barat.html">
+                                    <i class="fas fa-car icon-w"></i> Royal Baarat & Transport
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item highlighted-item" href="Gangaarti.html">
+                                    <i class="fas fa-gopuram icon-w"></i> Grand Entry & Themes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Orchestra.html">
+                                    <i class="fas fa-music icon-w"></i> Live Entertainment & Music
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Pre-Wedding.html">
+                                    <i class="fas fa-magic icon-w"></i> Creative Decor & Styling
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="food-Counters.html">
+                                    <i class="fas fa-utensils icon-w"></i> Food & Catering Counters
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Lucky%20Band,%20I%20want%20to%20enquire%20about%20your%20services." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+
+
+<main class="container my-5 py-5">
+
+        <div class="text-center mb-5 pb-2">
+            <span class="text-uppercase" style="color: #f8f9fa; font-size: 0.85rem; font-weight: 700; letter-spacing: 2px;">Get In Touch</span>
+            <h1 class="mt-2" style="font-weight: 800; font-size: 2.8rem; letter-spacing: 1px; color: #ffffff;">Book Your Grand Event</h1>
+            <div class="mx-auto mt-3" style="width: 60px; height: 3px; background-color: var(--royal-gold);"></div>
+        </div>
+
+        <div class="row g-5">
+            
+            <div class="col-lg-5">
+                <div class="h-100 p-4 d-flex flex-column justify-content-between" style="background-color: var(--royal-card); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 8px;">
+                    <div>
+                        <h3 style="color: var(--royal-gold); font-weight: 700; font-size: 1.6rem; margin-bottom: 25px;">Let's Plan Together</h3>
+                        <p class="mb-4" style="line-height: 1.8; color: #f8f9fa; font-size: 1.05rem;">Have an upcoming wedding, corporate gala, or family celebration? Drop us a message or fill out our structural booking form, and our elite coordination team will get back to you within 24 hours.</p>
+                        
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="text-center me-3" style="width: 40px; height: 40px; background-color: rgba(212, 175, 55, 0.15); border-radius: 4px; line-height: 40px; flex-shrink: 0;">
+                                <i class="fa-solid fa-location-dot" style="color: var(--royal-gold); font-size: 1.1rem;"></i>
+                            </div>
+                            <div>
+                                <h6 class="m-0 fw-bold" style="color: #ffffff; font-size: 1.1rem;">Our Office Location</h6>
+                                <p class="m-0 mt-1" style="color: #f8f9fa; font-weight: 500;">117/76, Purani Basti, Navin Nagar, Kakadeo, Kanpur, Uttar Pradesh 208025</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="text-center me-3" style="width: 40px; height: 40px; background-color: rgba(212, 175, 55, 0.15); border-radius: 4px; line-height: 40px; flex-shrink: 0;">
+                                <i class="fa-solid fa-phone" style="color: var(--royal-gold); font-size: 1.1rem;"></i>
+                            </div>
+                            <div>
+                                <h6 class="m-0 fw-bold" style="color: #ffffff; font-size: 1.1rem;">Call & WhatsApp Support</h6>
+                                <p class="m-0 mt-1" style="color: #f8f9fa; font-weight: 500;">+91 9580992533</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="text-center me-3" style="width: 40px; height: 40px; background-color: rgba(212, 175, 55, 0.15); border-radius: 4px; line-height: 40px; flex-shrink: 0;">
+                                <i class="fa-solid fa-envelope" style="color: var(--royal-gold); font-size: 1.1rem;"></i>
+                            </div>
+                            <div>
+                                <h6 class="m-0 fw-bold" style="color: #ffffff; font-size: 1.1rem;">Official Email</h6>
+                                <p class="m-0 mt-1" style="color: #f8f9fa; font-weight: 500;">shivaartsevent@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-top" style="border-color: rgba(212, 175, 55, 0.2) !important;">
+                        <h6 class="fw-bold m-0 mb-2" style="color: var(--royal-gold); font-size: 1.1rem;"><i class="fa-regular fa-clock me-2"></i>Operational Hours</h6>
+                        <p class="m-0" style="color: #ffffff; font-weight: 500;">Monday – Sunday: 10:00 AM – 09:00 PM (IST)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="p-4 p-md-5" style="background-color: var(--royal-card); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+                    <h3 style="font-weight: 700; font-size: 1.6rem; margin-bottom: 30px; color: #ffffff;">Inquire Availability</h3>
+                    
+                    <form class="row g-4 custom-contact-form">
+                        <div class="col-md-6">
+                            <label class="form-label small text-uppercase tracking-wider fw-bold" style="color: var(--royal-gold);">Full Name</label>
+                            <input type="text" class="form-control text-input" placeholder="Enter your name" style="color: #ffffff !important;" required>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="form-label small text-uppercase tracking-wider fw-bold" style="color: var(--royal-gold);">Phone Number</label>
+                            <input type="tel" class="form-control text-input" placeholder="Enter mobile number" style="color: #ffffff !important;" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label small text-uppercase tracking-wider fw-bold" style="color: var(--royal-gold);">Event Date</label>
+                            <input type="date" class="form-control text-input" style="color: #ffffff !important;" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label small text-uppercase tracking-wider fw-bold" style="color: var(--royal-gold);">Primary Service Required</label>
+                            <select class="form-select text-input" style="color: #ffffff !important;" required>
+                                <option value="" disabled selected style="color: #8b949e;">Select a Service</option>
+                                <option value="baarat" style="color: #ffffff; background-color: var(--royal-card);">Royal Baarat & Transport</option>
+                                <option value="themes" style="color: #ffffff; background-color: var(--royal-card);">Grand Entry & Concept Themes</option>
+                                <option value="music" style="color: #ffffff; background-color: var(--royal-card);">Live Entertainment & Orchestra</option>
+                                <option value="decor" style="color: #ffffff; background-color: var(--royal-card);">Creative Stage & Venue Decor</option>
+                                <option value="catering" style="color: #ffffff; background-color: var(--royal-card);">Live Food & Catering Counters</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label small text-uppercase tracking-wider fw-bold" style="color: var(--royal-gold);">Event Details / Special Requirements</label>
+                            <textarea class="form-control text-input" rows="4" placeholder="Tell us more about your dream event setup..." style="color: #ffffff !important;"></textarea>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-royal w-100 py-3 fw-bold" style="letter-spacing: 1px;">Submit Booking Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <style>
+        .custom-contact-form .text-input {
+            background-color: rgba(11, 15, 23, 0.8) !important;
+            border: 1px solid rgba(212, 175, 55, 0.3) !important;
+            color: #ffffff !important;
+            padding: 12px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .custom-contact-form .text-input::placeholder {
+            color: #a5adb7 !important;
+            font-size: 0.9rem;
+            opacity: 1;
+        }
+
+        .custom-contact-form .text-input:focus {
+            background-color: #121824 !important;
+            border-color: var(--royal-gold) !important;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3) !important;
+            outline: none;
+        }
+
+        .custom-contact-form select.text-input {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23d4af37' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <div class="mb-3">
+                        <img src="logo.png" alt="Lucky Band Logo" height="50">
+                    </div>
+                    <p class="footer-text pe-lg-2">
+                        We turn grand celebrations into majestic realities. Specializing in elite wedding bands, luxury processions, high-end thematic entries, and live orchestras.
+                    </p>
+                    <div class="social-box-container mt-4">
+                        <a href="#" class="social-box"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-box"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 ps-lg-4">
+                    <h5 class="footer-heading text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="#">Our Pricing</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading text-uppercase">Our Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="barat.html">Royal Baarat & Brass Band</a></li>
+                        <li><a href="Gangaarti.html">Ganga Aarti & Adiyogi Themes</a></li>
+                        <li><a href="Orchestra.html">Live Orchestra & Stars DJ</a></li>
+                        <li><a href="Pre-Wedding.html">Pre-Wedding & Stage Decor</a></li>
+                        <li><a href="food-Counters.html">Exotic Food Counters</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading text-uppercase">Contact Info</h5>
+                    <ul class="list-unstyled footer-links d-block">
+                        <li class="mb-3">
+                            <i class="fa-solid fa-location-dot footer-info-icon"></i>
+                            <span class="contact-item-text">Main Office Street, Near Royal Plaza, City, State - XXXXXX</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-phone footer-info-icon"></i>
+                            <span class="contact-item-text">+91 98765 43210<br>+91 91234 56789</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-envelope footer-info-icon"></i>
+                            <span class="contact-item-text">info@luckyband.com<br>events@luckyband.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center footer-bottom">
+                    <p class="mb-0">&copy; 2026 Lucky Band. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
