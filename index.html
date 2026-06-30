@@ -7,9 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         /* Custom Theme Variables */
@@ -247,6 +244,112 @@
             font-size: 13px;
             color: #62758d;
         }
+		
+		
+		/* ============================================================== */
+/* FASHIONABLE EVENT MANAGEMENT TYPOGRAPHY WITH STRICT RATIO SETUP */
+/* ============================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@300;400;600&family=Prata&display=swap');
+
+.custom-service-card {
+    background-color: #121824; 
+    border-radius: 24px;       
+    padding: 50px 30px;        
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-display-title {
+    font-family: 'Cinzel', serif; /* Ultra-premium bold luxury font */
+    font-size: calc(1.6rem + 1.4vw); 
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.gold-serif {
+    color: #d4af37; 
+    font-family: 'Prata', serif; /* Elegant modern straight font (No Italics) */
+    font-weight: 400;
+}
+
+.content-mini-tag {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    font-size: calc(0.65rem + 0.2vw);
+    font-weight: 600;
+    color: #a0aec0;
+}
+
+.service-main-para {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; 
+    font-size: calc(0.9rem + 0.15vw);
+    line-height: 1.9;
+    color: #e2e8f0;
+    max-width: 85%; 
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center; 
+}
+
+/* IMAGE CONTAINER - Sits perfectly balanced in the center */
+.centered-image-frame {
+    width: 100%;
+    max-width: 700px;  /* Reference image ki tarah compact width layout */
+    margin: 40px auto;
+    display: block;
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+/* FORCE ASPECT RATIO (Bina stretch kiye image ratio manage karega) */
+.centered-image-frame img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Strict ratio jisse image wide look me dikhegi */
+    object-fit: cover;    /* Photo ko proportional scale aur crop karega */
+    display: block;
+}
+
+.custom-pointers-list-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.custom-pointers-list-center li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: calc(0.8rem + 0.15vw);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.btn-stylish-enquire {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: #d4af37;
+    color: #121824;
+    padding: 12px 40px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    border: 2px solid #d4af37;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-stylish-enquire:hover {
+    background-color: transparent;
+    color: #d4af37;
+}
     </style>
 </head>
 <body>
@@ -254,7 +357,7 @@
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Lucky Band Logo" height="50" class="d-inline-block align-top">
+                <img src="logo.png" alt="Lucky Band Logo" height="80" class="d-inline-block align-top">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -276,27 +379,27 @@
                         </a>
                         <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="servicesDropdown">
                             <li>
-                                <a class="dropdown-item" href="barat.html">
+                                <a class="dropdown-item" href="#bara">
                                     <i class="fas fa-car icon-w"></i> Royal Baarat & Transport
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="Gangaarti.html">
+                                <a class="dropdown-item" href="#flo">
                                     <i class="fas fa-gopuram icon-w"></i> Grand Entry & Themes
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="Orchestra.html">
+                                <a class="dropdown-item" href="#mus">
                                     <i class="fas fa-music icon-w"></i> Live Entertainment & Music
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="Pre-Wedding.html">
+                                <a class="dropdown-item" href="#decor">
                                     <i class="fas fa-magic icon-w"></i> Creative Decor & Styling
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="food-Counters.html">
+                                <a class="dropdown-item" href="#food">
                                     <i class="fas fa-utensils icon-w"></i> Food & Catering Counters
                                 </a>
                             </li>
@@ -314,15 +417,24 @@
         </div>
     </nav>
 
-    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Lucky%20Band,%20I%20want%20to%20enquire%20about%20your%20services." class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/919580992533?text=Hello%20Lucky%20Band,%20I%20want%20to%20enquire%20about%20your%20services." class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+
+
+
+
+
+
+<!-- ============================================================== -->
+<!-- SECTION 1: HERO AUTO SLIDER (KEEPS THE EXACT SAME LOGIC)       -->
+<!-- ============================================================== -->
 <header id="heroAutoSlider">
     <div class="hero-slider-bg-container">
-        <div class="hero-slide active" style="background-image: linear-gradient(rgba(11, 15, 23, 0.65), rgba(11, 15, 23, 0.85)), url('https://help.tallysolutions.com/wp-content/uploads/2026/05/print-gif.gif');"></div>
-        <div class="hero-slide" style="background-image: linear-gradient(rgba(11, 15, 23, 0.65), rgba(11, 15, 23, 0.85)), url('slider-img2.jpg');"></div>
-        <div class="hero-slide" style="background-image: linear-gradient(rgba(11, 15, 23, 0.65), rgba(11, 15, 23, 0.85)), url('https://resources.tallysolutions.com/wp-content/themes/tally/assets/images/tally-logo-black.svg');"></div>
+        <div class="hero-slide active" style="background-image: linear-gradient(rgba(11, 15, 23, 0.65), rgba(11, 15, 23, 0.85)), url('https://i.pinimg.com/736x/62/cd/3c/62cd3c7c2a6eb0e03758cd677dabfe0a.jpg');"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(11, 15, 23, 0.65), rgba(11, 15, 23, 0.85)), url('https://i.pinimg.com/736x/4b/19/08/4b190804b7a3b80200a10fc2ebcb2575.jpg');"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(11, 15, 23, 0.65), rgba(11, 15, 23, 0.85)), url('https://i.pinimg.com/1200x/e3/30/9c/e3309cbfae43682f8d6751c2d72e0e61.jpg');"></div>
     </div>
 
     <div class="hero-text-box">
@@ -335,80 +447,102 @@
     </div>
 </header>
 
+<!-- ============================================================== -->
+<!-- SECTION 2: NEW BRAND NEW PREMIUM HOVER BENTO GRID DESIGN        -->
+<!-- ============================================================== -->
 <section class="exclusive-events-section py-5">
     <div class="container py-4">
         
+        <!-- Section Heading -->
         <div class="text-center mb-5">
             <h2 class="section-main-heading text-uppercase">Our Exclusive Events</h2>
             <div class="mx-auto mt-2 center-gold-divider"></div>
         </div>
 
-        <div class="swiper exclusiveEventsSwiper px-2 py-4">
-            <div class="swiper-wrapper">
-                
-                <div class="swiper-slide">
-                    <div class="royal-3d-card">
-                        <div class="card-img-holder">
-                            <img src="path/to/baarat-service.jpg" alt="Royal Baarat Service" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=ROYAL+BAARAT';">
-                        </div>
-                        <div class="card-title-footer">
-                            <h4 class="text-uppercase m-0">Royal Baarat</h4>
-                        </div>
+        <!-- Premium Modern Grid Structure -->
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Card 1: Royal Baarat -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="royal-bento-card">
+                    <div class="bento-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/df/d4/5f/dfd45f9bb84e4d9aedd628fca269c96a.jpg" alt="Royal Baarat Service" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=ROYAL+BAARAT';">
+                        <div class="bento-overlay-gradient"></div>
+                    </div>
+                    <div class="bento-content-box">
+                        <span class="bento-mini-tag">Grand Procession</span>
+                        <h4 class="bento-title text-uppercase">Royal Baarat</h4>
+                        <p class="bento-desc">Traditional royal entry packed with energetic dhol rhythms and premium brass band arrays.</p>
                     </div>
                 </div>
-
-                <div class="swiper-slide">
-                    <div class="royal-3d-card">
-                        <div class="card-img-holder">
-                            <img src="path/to/grand-entry.jpg" alt="Grand Entry & Themes" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=GRAND+ENTRY';">
-                        </div>
-                        <div class="card-title-footer">
-                            <h4 class="text-uppercase m-0">Grand Entry & Themes</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="royal-3d-card">
-                        <div class="card-img-holder">
-                            <img src="path/to/wedding-decor.jpg" alt="Wedding Decoration" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=WEDDING+DECORATION';">
-                        </div>
-                        <div class="card-title-footer">
-                            <h4 class="text-uppercase m-0">Wedding Decoration</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="royal-3d-card">
-                        <div class="card-img-holder">
-                            <img src="path/to/orchestra-stage.jpg" alt="Live Orchestra Stage" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=LIVE+ORCHESTRA';">
-                        </div>
-                        <div class="card-title-footer">
-                            <h4 class="text-uppercase m-0">Live Orchestra</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="royal-3d-card">
-                        <div class="card-img-holder">
-                            <img src="path/to/food-counters.jpg" alt="Food & Catering Counters" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=FOOD+COUNTERS';">
-                        </div>
-                        <div class="card-title-footer">
-                            <h4 class="text-uppercase m-0">Food Counters</h4>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
-            <div class="swiper-button-next custom-swiper-arrow"></div>
-            <div class="swiper-button-prev custom-swiper-arrow"></div>
+            <!-- Card 2: Grand Entry & Themes -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="royal-bento-card">
+                    <div class="bento-img-wrapper">
+                        <img src="https://i.pinimg.com/1200x/2f/3a/3f/2f3a3fa0e3c57ead450b781ecbb0f691.jpg" alt="Grand Entry & Themes" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=GRAND+ENTRY';">
+                        <div class="bento-overlay-gradient"></div>
+                    </div>
+                    <div class="bento-content-box">
+                        <span class="bento-mini-tag">Cinematic Experience</span>
+                        <h4 class="bento-title text-uppercase">Grand Entry & Themes</h4>
+                        <p class="bento-desc">Bespoke dynamic staging layouts and custom visual panels for a mesmerizing reveal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Wedding Decoration -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="royal-bento-card">
+                    <div class="bento-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/27/f9/43/27f94347be1eb66eb3bb9ccf1c137f51.jpg" alt="Wedding Decoration" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=WEDDING+DECORATION';">
+                        <div class="bento-overlay-gradient"></div>
+                    </div>
+                    <div class="bento-content-box">
+                        <span class="bento-mini-tag">Luxury Spaces</span>
+                        <h4 class="bento-title text-uppercase">Wedding Decoration</h4>
+                        <p class="bento-desc">Immersive exotic floral architectures, royal drapery, and pristine stage craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Live Orchestra Stage -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="royal-bento-card wide-card">
+                    <div class="bento-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/46/0f/dd/460fdd5a0919f1b4407b1f37a84df3c1.jpg" alt="Live Orchestra Stage" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=WEDDING+DECORATION';" >
+                        <div class="bento-overlay-gradient"></div>
+                    </div>
+                    <div class="bento-content-box">
+                        <span class="bento-mini-tag">Acoustic Spectacle</span>
+                        <h4 class="bento-title text-uppercase">Live Orchestra</h4>
+                        <p class="bento-desc">High-output premium sound systems combined with veteran musical artists to capture every dynamic pulse live.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Food Counters -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="royal-bento-card wide-card">
+                    <div class="bento-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/c6/6c/bd/c66cbdd8ea391f259081d19d90330e28.jpg" alt="Food & Catering Counters" onerror="this.src='https://via.placeholder.com/500x600/121824/d4af37?text=FOOD+COUNTERS';">
+                        <div class="bento-overlay-gradient"></div>
+                    </div>
+                    <div class="bento-content-box">
+                        <span class="bento-mini-tag">Culinary Masterclass</span>
+                        <h4 class="bento-title text-uppercase">Food Counters</h4>
+                        <p class="bento-desc">Exquisite presentation aesthetics displaying signature national and global cuisines in pristine hygienic setups.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
-</section><style>
+</section>
+
+<style>
 /* ==========================================
    1. AUTO-CHANGING HEADER STYLES
    ========================================== */
@@ -429,7 +563,7 @@
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 1.5s ease-in-out; /* Super Smooth Fade Interaction */
+    transition: opacity 1.5s ease-in-out;
     z-index: 1;
 }
 
@@ -494,16 +628,16 @@
 }
 
 /* ==========================================
-   2. SMOOTH SLIDER CAROUSEL STYLES (Fixed Crash)
+   2. NEW LUXURY HOVER BENTO GRID STYLES
    ========================================== */
 .exclusive-events-section {
-    background-color: var(--royal-card);
+    background-color: var(--royal-card, #121824);
     border-top: 1px solid rgba(212, 175, 55, 0.1);
     border-bottom: 1px solid rgba(212, 175, 55, 0.1);
 }
 
 .section-main-heading {
-    color: var(--royal-gold);
+    color: var(--royal-gold, #d4af37);
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -512,99 +646,126 @@
 .center-gold-divider {
     width: 50px;
     height: 3px;
-    background-color: var(--royal-gold);
+    background-color: var(--royal-gold, #d4af37);
 }
 
-/* Core Card Structure Styling */
-.royal-3d-card {
+/* Bento Card Base Structure */
+.royal-bento-card {
+    position: relative;
+    width: 100%;
+    height: 380px; /* Uniform standard grid block height */
     background-color: #050811;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(212, 175, 55, 0.15);
-    transition: all 0.4s ease;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.card-img-holder {
+/* Wide Configuration for Row 2 */
+@media (min-width: 992px) {
+    .royal-bento-card.wide-card {
+        height: 320px;
+    }
+}
+
+/* Image Scaling and Control */
+.bento-img-wrapper {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    height: 100%;
+    position: relative;
     overflow: hidden;
 }
 
-.card-img-holder img {
+.bento-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transform: scale(1);
+    transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.card-title-footer {
-    background-color: #050811;
-    padding: 20px 15px;
-    text-align: center;
-    transition: background-color 0.4s ease;
+/* Premium Gradient Mask Overlay */
+.bento-overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(5, 8, 17, 0) 20%, rgba(5, 8, 17, 0.7) 50%, #050811 95%);
+    transition: opacity 0.5s ease;
 }
 
-.card-title-footer h4 {
-    color: #ffffff;
-    font-size: 1rem;
+/* Content Container Details */
+.bento-content-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    z-index: 5;
+    transform: translateY(40px); /* Hides description text initially */
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.bento-mini-tag {
+    display: inline-block;
+    color: var(--royal-gold, #d4af37);
+    font-size: 0.75rem;
     font-weight: 600;
+    letter-spacing: 1px;
+    text-uppercase;
+    margin-bottom: 6px;
+    opacity: 0.8;
+}
+
+.bento-title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
     letter-spacing: 0.5px;
     transition: color 0.4s ease;
 }
 
-/* --- CARDS Micro-interactions & Dimming Properties --- */
-.exclusiveEventsSwiper .swiper-slide {
-    opacity: 0.4; /* Side Panels Dimmed status like image 2 */
-    transform: scale(0.9);
-    transition: all 0.4s ease;
+.bento-desc {
+    color: #cbd5e1;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
-/* Center Highlight State */
-.exclusiveEventsSwiper .swiper-slide-active {
-    opacity: 1 !important;
-    transform: scale(1.03) !important; /* Scale pop center animation */
+/* --- INTERACTIVE MICRO-HOVER TRANSLATIONS --- */
+.royal-bento-card:hover {
+    border-color: var(--royal-gold, #d4af37);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
+    transform: translateY(-5px);
 }
 
-.exclusiveEventsSwiper .swiper-slide-active .royal-3d-card {
-    border-color: var(--royal-gold);
-    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
+.royal-bento-card:hover .bento-img-wrapper img {
+    transform: scale(1.08);
 }
 
-.exclusiveEventsSwiper .swiper-slide-active .card-img-holder img {
-    transform: scale(1.03);
+.royal-bento-card:hover .bento-content-box {
+    transform: translateY(0); /* Shifts content smoothly back to normal position */
 }
 
-.exclusiveEventsSwiper .swiper-slide-active .card-title-footer h4 {
-    color: var(--royal-gold);
+.royal-bento-card:hover .bento-desc {
+    opacity: 1;
 }
 
-/* Arrows controls styling overrides */
-.custom-swiper-arrow {
-    color: var(--royal-gold) !important;
-    width: 45px;
-    height: 45px;
-    background-color: rgba(18, 24, 36, 0.8);
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    border-radius: 50%;
+.royal-bento-card:hover .bento-title {
+    color: var(--royal-gold, #d4af37);
 }
-
-.custom-swiper-arrow::after {
-    font-size: 16px !important;
-    font-weight: bold;
-}
-
-.custom-swiper-arrow:hover {
-    background-color: var(--royal-gold);
-    color: #0b0f17 !important;
-}</style>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</style>
 
 <script>
     // 1. STABLE HERO IMAGE AUTO-FADER LOGIC
     document.addEventListener('DOMContentLoaded', function() {
         const slides = document.querySelectorAll('#heroAutoSlider .hero-slide');
         let currentSlide = 0;
-        const slideInterval = 5000; // Auto-change every 5 seconds
+        const slideInterval = 5000;
 
         function nextSlide() {
             slides[currentSlide].classList.remove('active');
@@ -613,942 +774,1348 @@
         }
         setInterval(nextSlide, slideInterval);
     });
-
-    // 2. FIXED CAROUSEL SLIDE ENGINE WITH AUTOPLAY & LOOP
-    const exclusiveEventsSwiper = new Swiper('.exclusiveEventsSwiper', {
-        effect: 'slide',          /* Fixed the Overlapping / crashing loop issue completely */
-        grabCursor: true,
-        centeredSlides: true,
-        loop: true,               
-        autoplay: {
-            delay: 3000,          /* Slides change automatically every 3 seconds */
-            disableOnInteraction: false,
-        },
-        slidesPerView: 'auto',
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            320: { slidesPerView: 1, spaceBetween: 15 },
-            768: { slidesPerView: 2, spaceBetween: 25 },
-            1024: { slidesPerView: 3, spaceBetween: 35 }
-        }
-    });
 </script>
-<section class="stylish-recent-work py-5">
-    <div class="container py-lg-5">
-        
-        <div class="text-center mb-5 pb-4">
-            <h2 class="section-display-heading text-uppercase">Our Recent Work</h2>
-            <div class="mx-auto mt-3 stylish-gold-line"></div>
-        </div>
 
-        <div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-            <div class="col-lg-7 order-2 order-lg-1">
-                <div class="stylish-content-box">
-                    <span class="content-mini-tag text-uppercase">Grand & Luxurious</span>
-                    <h3 class="service-display-title mt-2 mb-3">Majestic <span class="gold-serif">Vintage Car Fleet</span></h3>
-                    <p class="service-main-para">Hamari Vintage Car Fleet service aapke sabse khaas aur shahi pal ko ek behatareen aur yaadgaar anubhav me badal deti hai. Phoolon ki chadar, royal palki, dhol-tasha aur shahi shaan ke saath dulhe ki entry ko aesa grand aur luxurious banaya jata hai ki sabhi ki nigahein aap par thahar jayein. Har ek gadi ko pristine condition me maintain kiya jata hai taaki aapka procession look ekdum premium aur majestic dikhe.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================================== -->
+<!-- RECENT WORK SECTION START (Fully Responsive & Center Aligned) -->
+<!-- ============================================================== -->
+<section class="recent-work-section py-5 bg-dark">
+    <div class="container-fluid px-2 px-md-4">
+
+        <!-- Main Card Content Component -->
+        <div class="row justify-content-center" id="bara">
+            <div class="col-12 col-xl-11">
+
+                <div class="custom-service-card text-center text-white">
                     
-                    <div class="stylish-pointers-block mt-4">
-                        <h5 class="pointers-title text-uppercase">Pointers</h5>
-                        <ul class="list-unstyled custom-pointers-list mt-2">
-                            <li><i class="fa-solid fa-car text-danger"></i> Immaculate Condition Vintage Cars</li>
-                            <li><i class="fa-solid fa-crown text-warning"></i> Authentic Retro Experience</li>
-                            <li><i class="fa-solid fa-wand-magic-sparkles text-info"></i> Customized Floral Styling & Decors</li>
-                            <li><i class="fa-solid fa-user-tie text-secondary"></i> Professional Royal Uniformed Chauffeurs</li>
+                    <!-- 1. Mini Tag -->
+                    <span class="content-mini-tag text-uppercase d-block mb-2">Grand & Luxurious</span>
+                    
+                    <!-- 2. Main Title -->
+                    <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                        Majestic <span class="gold-serif">Vintage Car Fleet</span>
+                    </h3>
+                    
+                    <!-- 3. Main Paragraph Description -->
+                    <div class="px-3 px-md-5">
+                        <p class="service-main-para">
+                            Our Vintage Car Fleet service transforms your most special and royal moments into an exquisite, unforgettable experience. From the elegant floral canopy and royal palanquin to the grand traditional dhol-tasha beats, we craft a groom's entry so magnificent and luxurious that every eye remains transfixed on you. Each vehicle is meticulously maintained in pristine condition to ensure your wedding procession looks exceptionally premium, timeless, and majestic.
+                        </p>
+                    </div>
+                    
+                    <!-- 4. CENTERED IMAGE (Strict Aspect Ratio Control Like Reference Image) -->
+                    <div class="centered-image-frame">
+                        <img src="https://i.pinimg.com/1200x/11/e5/75/11e57501a2779880f7a2cad2508450ed.jpg" alt="Majestic Vintage Car Fleet for Wedding Entry">
+                    </div>
+
+                    <!-- 5. Pointers Block -->
+                    <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                        <ul class="custom-pointers-list-center">
+                            <li><i class="fa-solid fa-car text-danger me-2"></i> Immaculate Condition Vintage Cars</li>
+                            <li><i class="fa-solid fa-crown text-warning me-2"></i> Authentic Retro Experience</li>
+                            <li><i class="fa-solid fa-wand-magic-sparkles text-info me-2"></i> Customized Floral Styling & Decors</li>
+                            <li><i class="fa-solid fa-user-tie text-secondary me-2"></i> Professional Royal Uniformed Chauffeurs</li>
                         </ul>
                     </div>
                     
+                    <!-- 6. Enquire Button -->
                     <div class="mt-4 pt-2">
                         <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
                     </div>
+
                 </div>
+
             </div>
-            <div class="col-lg-5 order-1 order-lg-2">
-                <div class="stylish-image-frame">
-                    <img src="path/to/vintage-car.jpg" alt="Majestic Vintage Car Fleet" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Vintage+Car+Fleet';">
+        </div>
+		<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <span class="content-mini-tag text-uppercase d-block mb-2">Modern Concert-Style Entertainment</span>
+                
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Grand <span class="gold-serif">Moscow Truck Setup</span>
+                </h3>
+                
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        The Grand Moscow Truck Setup is a massive, custom-engineered high-end mobile platform integrating high-definition heavy line-array sound systems and dynamic, concert-style intelligent moving lighting. This heavy-duty setup delivers an energetic live music festival and carnival experience right on the streets, bringing an unmatchable hype, electrifying energy, and true cinematic scale to your wedding procession.
+                    </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-            <div class="col-lg-5">
-                <div class="stylish-image-frame">
-                    <img src="path/to/moscow-truck.jpg" alt="Grand Moscow Truck Setup" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Moscow+Truck+Setup';">
+                
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/41/9c/55/419c55715849e326997a2f765c43898a.jpg" alt="Grand Moscow Truck Setup for Wedding Procession">
                 </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="stylish-content-box ps-lg-4">
-                    <span class="content-mini-tag text-uppercase">Modern Concert-Style Entertainment</span>
-                    <h3 class="service-display-title mt-2 mb-3">Grand <span class="gold-serif">Moscow Truck Setup</span></h3>
-                    <p class="service-main-para">Grand Moscow Truck Setup ek vishal aur custom-engineered high-end mobile platform hai jisme high-definition heavy line-array sound setups aur dynamic concert-style intelligent moving lighting systems ko integrate kiya gaya hai. Yeh heavy setup sadkon par chalte-phirte live music concert aur carnival jaisa energetic sound experience delivery karta hai jo aapki baarat procession ko ek alag hi unmatchable hype aur cinematic scale deta hai.</p>
-                    
-                    <div class="stylish-pointers-block mt-4">
-                        <h5 class="pointers-title text-uppercase">Pointers</h5>
-                        <ul class="list-unstyled custom-pointers-list mt-2">
-                            <li><i class="fa-solid fa-sliders text-primary"></i> Custom Pro Sound Engineering & Line Arrays</li>
-                            <li><i class="fa-solid fa-lightbulb text-warning"></i> Concert-Style Intelligent Moving Lighting</li>
-                            <li><i class="fa-solid fa-microphone text-light"></i> Live Performers & DJ Overhead Stage Layout</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="mt-4 pt-2">
-                        <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-                    </div>
+
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-sliders text-primary me-2"></i> Custom Pro Sound Engineering & Line Arrays</li>
+                        <li><i class="fa-solid fa-lightbulb text-warning me-2"></i> Concert-Style Intelligent Moving Lighting</li>
+                        <li><i class="fa-solid fa-microphone text-light me-2"></i> Live Performers & DJ Overhead Stage Layout</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-
-        <div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-            <div class="col-lg-7 order-2 order-lg-1">
-                <div class="stylish-content-box">
-                    <span class="content-mini-tag text-uppercase">Traditional Vibrancy & Neon Fusion</span>
-                    <h3 class="service-display-title mt-2 mb-3"><span class="gold-serif">Dhol Light-Car</span> Procession</h3>
-                    <p class="service-main-para">Dhol Light-Car Procession authentic Punjabi dhol beats ki thunderous energy aur neon light patterns ka ek majestic aur ultra-modern fusion hai. Isme customized structures ke upar dynamic LED neon display setups lagaye jate hain jo dhol ke rhythms ke sath performance-oriented tarike se sync hote hain. Yeh shandar light aur sound combo street baarat me logo ko jhumne par majboor kar deta hai aur crowd energy ko top level par rakhta hai.</p>
-                    
-                    <div class="stylish-pointers-block mt-4">
-                        <h5 class="pointers-title text-uppercase">Pointers</h5>
-                        <ul class="list-unstyled custom-pointers-list mt-2">
-                            <li><i class="fa-solid fa-drum text-danger"></i> Thunderous Authentic Punjabi Dhol Beats</li>
-                            <li><i class="fa-solid fa-bolt text-warning"></i> Integrated Custom Neon LED Light Patterns</li>
-                            <li><i class="fa-solid fa-users-rays text-success"></i> High-Octane Massive Crowd Energy</li>
-                            <li><i class="fa-solid fa-arrows-rotate text-info"></i> Audio-Visual Performance-Oriented Syncing</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="mt-4 pt-2">
-                        <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-                    </div>
+                
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
                 </div>
+
             </div>
-            <div class="col-lg-5 order-1 order-lg-2">
-                <div class="stylish-image-frame">
-                    <img src="path/to/dhol-car.jpg" alt="Dhol Light-Car Procession" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Dhol+Light+Car';">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <span class="content-mini-tag text-uppercase d-block mb-2">Traditional Vibrancy & Neon Fusion</span>
+                
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    <span class="gold-serif">Dhol Light-Car</span> Procession
+                </h3>
+                
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Our Dhol Light-Car Procession is a majestic, ultra-modern fusion of thunderous, authentic Punjabi dhol beats and vibrant neon light patterns. Customized mobile structures house dynamic LED neon displays that are expertly synchronized with the live drumming rhythms. This spectacular audiovisual combination creates an irresistible urge to dance, elevating crowd interaction and street energy to its absolute peak.
+                    </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-            <div class="col-lg-5">
-                <div class="stylish-image-frame">
-                    <img src="path/to/double-decker.jpg" alt="Double Decker Procession" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Double+Decker+Bus';">
+                
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/25/ee/2c/25ee2cb7e0e35becab269c074ddcee17.jpg" alt="Dhol Light-Car Procession Wedding Celebration">
                 </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="stylish-content-box ps-lg-4">
-                    <span class="content-mini-tag text-uppercase">Elite Royal Scale</span>
-                    <h3 class="service-display-title mt-2 mb-3">Double Decker <span class="gold-serif">Procession Layout</span></h3>
-                    <p class="service-main-para">Double Decker Procession ek absolute luxury setup hai jo aapke baarat procession ko ek massive visual scale aur behatareen structural look deta hai. Is open-top modified royal multi-level structure par family members, premium guests aur live performance artists ek sath unchai par baithkar jashn mana sakte hain aur interact kar sakte hain. Yeh poorv- नियोजित layout baarat me chal rahe sabhi logo aur spectators ka dhyan poori tarah se attract karta hai.</p>
-                    
-                    <div class="stylish-pointers-block mt-4">
-                        <h5 class="pointers-title text-uppercase">Pointers</h5>
-                        <ul class="list-unstyled custom-pointers-list mt-2">
-                            <li><i class="fa-solid fa-bus text-info"></i> Open-Roof Open Air Panoramic Setup</li>
-                            <li><i class="fa-solid fa-guitar text-primary"></i> On-Board Premium Performance Lounge Space</li>
-                            <li><i class="fa-solid fa-eye text-warning"></i> Massive Street Attention & Luxury Scale</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="mt-4 pt-2">
-                        <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-                    </div>
+
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-drum text-danger me-2"></i> Thunderous Authentic Punjabi Dhol Beats</li>
+                        <li><i class="fa-solid fa-bolt text-warning me-2"></i> Integrated Custom Neon LED Light Patterns</li>
+                        <li><i class="fa-solid fa-users-rays text-success me-2"></i> High-Octane Massive Crowd Energy</li>
+                        <li><i class="fa-solid fa-arrows-rotate text-info me-2"></i> Audio-Visual Performance-Oriented Syncing</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-
-        <div class="row align-items-center g-5 stylish-work-row">
-            <div class="col-lg-7 order-2 order-lg-1">
-                <div class="stylish-content-box">
-                    <span class="content-mini-tag text-uppercase">Heritage & Tradition Majestic</span>
-                    <h3 class="service-display-title mt-2 mb-3">Royal <span class="gold-serif">Bagghi Procession</span></h3>
-                    <p class="service-main-para">Experience the deep-rooted pure heritage of traditional Indian royal weddings with our authentic luxury chariots. Beautifully carved golden vintage structure wall motifs aur perfectly trained high-breed white horses se chalne wali yeh bagghi dulhe ko ek absolute king-like lifestyle aur shahi feel deti hai. Ek majestic ambiance aur flawless royal execution deliver karne ke liye yeh hamari sabse demanded elite heritage service hai.</p>
-                    
-                    <div class="stylish-pointers-block mt-4">
-                        <h5 class="pointers-title text-uppercase">Pointers</h5>
-                        <ul class="list-unstyled custom-pointers-list mt-2">
-                            <li><i class="fa-solid fa-horse text-light"></i> Perfectly Trained Majestic White Horses</li>
-                            <li><i class="fa-solid fa-gavel text-warning"></i> Premium Golden Heritage Carvings & Motifs</li>
-                            <li><i class="fa-solid fa-award text-success"></i> Elite King-Like Traditional Entry Standards</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="mt-4 pt-2">
-                        <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-                    </div>
+                
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
                 </div>
+
             </div>
-            <div class="col-lg-5 order-1 order-lg-2">
-                <div class="stylish-image-frame">
-                    <img src="path/to/bagghi.jpg" alt="Royal Bagghi Procession" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Royal+Bagghi+Setup';">
+
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- BLOCK 3: DOUBLE DECKER PROCESSION -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Elite Royal Scale</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Double Decker <span class="gold-serif">Procession Layout</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description (Translated to Premium English) -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        The Double Decker Procession is an absolute luxury setup that provides a massive visual scale and a magnificent structural look to your wedding procession. This open-top, modified royal multi-level structure allows family members, premium guests, and live performance artists to celebrate and interact together from an elevated vantage point. This meticulously planned layout effortlessly captures the complete attention of both the procession attendees and street spectators.
+                    </p>
                 </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/8f/30/dc/8f30dc7ffc75c5391592fde168424631.jpg" alt="Double Decker Procession Layout" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Double+Decker+Procession';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-bus text-info me-2"></i> Open-Roof Panoramic Setup</li>
+                        <li><i class="fa-solid fa-guitar text-primary me-2"></i> On-Board Premium Performance Lounge Space</li>
+                        <li><i class="fa-solid fa-eye text-warning me-2"></i> Massive Street Attention & Luxury Scale</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-        </div>
-		<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/flower-entry.jpg" alt="Royal Flower Entry Concept" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Royal+Flower+Entry';">
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Floral Elegance & Grace</span>
-            <h3 class="service-display-title mt-2 mb-3">Royal <span class="gold-serif">Flower Entry Setup</span></h3>
-            <p class="service-main-para">Hamari Royal Flower Entry service aapke sabse dhasu aur yaadgaar pal ko ek naya shahi roop deti hai. Phoolon ki chadar, phoolon ki vrishti aur khubsoorat petals path ke sath dulha-dulhan ki entry ko itna behatareen banaya jata hai ki poora mahol mehak uthta hai. Har ek arrangement me fresh aur premium blossoms use kiye jate hain taaki aapka entry moment ekdum magical aur aesthetically rich dikhe.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-fan text-danger"></i> Exotic Phoolon Ki Chadar & Floral Showers</li>
-                    <li><i class="fa-solid fa-leaf text-success"></i> Fresh Premium Petals Pathway Decoration</li>
-                    <li><i class="fa-solid fa-seedling text-warning"></i> Customized Traditional Floral Theme Concepts</li>
-                </ul>
-            </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-7 order-2 order-lg-1">
-                <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Dramatic & Colorful Burst</span>
-            <h3 class="service-display-title mt-2 mb-3">Vibrant <span class="gold-serif">Color Smoke Entry</span></h3>
-            <p class="service-main-para">Vibrant Color Smoke Entry aapke grand entry moment me ek modern aur high-energy drama add karti hai. Multi-color premium smoke bombs aur specialized equipment ke sath dulha-dulhan ka swagat ek vishal aur colorful cloud burst ke sath kiya jata hai. Yeh majestic visual effect day events aur outdoor celebrations ke liye sabse best mana jata hai, jo aapki photos ko ekdum cinematic vibe deta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-cloud text-info"></i> High-Density Eco-Friendly Color Smoke Bombs</li>
-                    <li><i class="fa-solid fa-palette text-primary"></i> Multi-Color Custom Sync Combinations</li>
-                    <li><i class="fa-solid fa-camera text-light"></i> Perfect High-Energy Day Portrait Visuals</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 4: ROYAL BAGGHI PROCESSION -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Heritage & Tradition Majestic</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Royal <span class="gold-serif">Bagghi Procession</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description (Translated to Premium English) -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Experience the deep-rooted, pure heritage of traditional Indian royal weddings with our authentic luxury chariots. Featuring beautifully carved golden vintage motifs and pulled by perfectly trained, high-breed white horses, this chariot provides the groom with an absolute king-like lifestyle and a true royal feel. Renowned for delivering a majestic ambiance and flawless execution, this remains our most highly demanded elite heritage service.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/54/71/1d/54711d44c5167c0a24447e84c75d03cb.jpg" alt="Royal Bagghi Procession" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Royal+Bagghi+Procession';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-horse text-light me-2"></i> Perfectly Trained Majestic White Horses</li>
+                        <li><i class="fa-solid fa-gavel text-warning me-2"></i> Premium Golden Heritage Carvings & Motifs</li>
+                        <li><i class="fa-solid fa-award text-success me-2"></i> Elite King-Like Traditional Entry Standards</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-        <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/smoke-entry.jpg" alt="Vibrant Smoke Entry" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Vibrant+Smoke+Entry';">
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/mirror-entry.jpg" alt="Premium Mirror Entry Layout" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Premium+Mirror+Entry';">
+
+<!-- ============================================================== -->
+<!-- BLOCK 5: ROYAL FLOWER ENTRY SETUP -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center" id="flo">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Floral Elegance & Grace</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Royal <span class="gold-serif">Flower Entry Setup</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description (Translated to Premium English) -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Our Royal Flower Entry service gives your most spectacular and memorable moments a completely new, royal dimension. With an elegant floral canopy, delicate flower showers, and a beautifully crafted petal pathway, the bride and groom's entry is made so magnificent that the entire atmosphere blossoms with fragrance and joy. We utilize only fresh, premium blossoms in every arrangement to ensure your entry moment looks absolutely magical and aesthetically rich.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/85/6d/d9/856dd96250eae6b8a522270425789585.jpg" alt="Royal Flower Entry Concept" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Royal+Flower+Entry';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-fan text-danger me-2"></i> Exotic Floral Canopy & Showers</li>
+                        <li><i class="fa-solid fa-leaf text-success me-2"></i> Fresh Premium Petals Pathway Decoration</li>
+                        <li><i class="fa-solid fa-seedling text-warning me-2"></i> Customized Traditional Floral Theme Concepts</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
+            </div>
+
         </div>
     </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Modern Luxury & Reflection</span>
-            <h3 class="service-display-title mt-2 mb-3">Premium <span class="gold-serif">Mirror Entry Setup</span></h3>
-            <p class="service-main-para">Premium Mirror Entry layout ek ultra-luxurious aur futuristic wedding entry concept hai. Isme pure high-reflection mirror walkways aur polished structural panels use kiye jate hain, jo venue ki ambient lighting aur chandelier setups ko double scale par reflect karte hain. Jab dulha-dulhan is shahi glass path par chalte hain, toh ek adbhut aur high-end magical reflection create hota hai jo sabhi ko hairan kar deta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-border-all text-info"></i> High-Grade Polished Mirror Walkway Floor</li>
-                    <li><i class="fa-solid fa-wand-magic-sparkles text-warning"></i> Ambient Luxury Chandelier Reflection Effects</li>
-                    <li><i class="fa-solid fa-gem text-success"></i> Premium Modern Glass & Mirror Panel Aesthetics</li>
-                </ul>
+</div>
+<!-- ============================================================== -->
+<!-- BLOCK 6: VIBRANT COLOR SMOKE ENTRY -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Dramatic & Colorful Burst</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Vibrant <span class="gold-serif">Color Smoke Entry</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        The Vibrant Color Smoke Entry adds a touch of modern, high-energy drama to your grand entrance. Utilizing premium multi-color smoke bombs and specialized equipment, the couple is welcomed with a magnificent, vivid cloud burst. This majestic visual effect is highly recommended for daytime events and open-air celebrations, delivering a completely cinematic vibe to your wedding portraits.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/70/92/e7/7092e7510708346412459f209489246a.jpg" alt="Vibrant Color Smoke Entry" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Vibrant+Color+Smoke+Entry';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-cloud text-info me-2"></i> High-Density Eco-Friendly Color Smoke Bombs</li>
+                        <li><i class="fa-solid fa-palette text-primary me-2"></i> Multi-Color Custom Sync Combinations</li>
+                        <li><i class="fa-solid fa-camera text-light me-2"></i> Perfect High-Energy Day Portrait Visuals</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Vintage Royal Heritage</span>
-            <h3 class="service-display-title mt-2 mb-3">Majestic <span class="gold-serif">Padmavati Theme Entry</span></h3>
-            <p class="service-main-para">Experience the extreme heritage look with our custom Padmavati Theme Entry. Is high-end concept me rajasthani folk culture, traditional ghoomar dancers, shahi palkis, aur royal escorts ko include kiya jata hai. Dulhan ki entry poori shahi shaan aur dhol-tasha ke shabdo ke sath hoti hai, jo pure venue ko ek purane raaj-darbaar me badal deta hai. Yeh setup dulhan ko ek sachi queen-like feeling deliver karta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-crown text-warning"></i> Traditional Shahi Palki & Royal Escorts</li>
-                    <li><i class="fa-solid fa-users text-danger"></i> Uniformed Ghoomar Dancers & Cultural Artists</li>
-                    <li><i class="fa-solid fa-gavel text-light"></i> Authentic Rajasthani Palace Style Motifs</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 7: PREMIUM MIRROR ENTRY SETUP -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Modern Luxury & Reflection</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Premium <span class="gold-serif">Mirror Entry Setup</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        The Premium Mirror Entry layout is an ultra-luxurious and futuristic wedding entry concept. It features high-reflection mirror walkways and flawless, highly polished structural panels that amplify venue illumination and chandelier setups on a massive scale. As the bride and groom glide down this grand reflective pathway, it creates an exquisite, high-end magical reflection that leaves guests absolutely spellbound.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/eb/2e/16/eb2e166dc1a9cfab9565ed17cd3e4632.jpg" alt="Premium Mirror Entry Layout" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Premium+Mirror+Entry';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-border-all text-info me-2"></i> High-Grade Polished Mirror Walkway Floor</li>
+                        <li><i class="fa-solid fa-wand-magic-sparkles text-warning me-2"></i> Ambient Luxury Chandelier Reflection Effects</li>
+                        <li><i class="fa-solid fa-gem text-success me-2"></i> Premium Modern Glass & Mirror Panel Aesthetics</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/padmavati-entry.jpg" alt="Traditional Padmavati Theme Entry" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Padmavati+Theme+Entry';">
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/fog-coldfire.jpg" alt="Fog & Coldfire Varmala Setup" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Fog+and+Coldfire+Entry';">
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Cinematic Sensory Spectacle</span>
-            <h3 class="service-display-title mt-2 mb-3">Dry Ice <span class="gold-serif">Fog & Coldfire Entry</span></h3>
-            <p class="service-main-para">Dry Ice Fog aur Coldfire Entry ka combination hamari sabse blockbuster aur demanded service hai. Low-lying heavy dry ice machines floor par ek ghana badal (cloud effect) create karti hain, jisse lagta hai aap aasman me chal rahe hon. Theek usi moment par perfectly-timed cold-fire pyros automatic triggers hote hain, jo bina kisi danger ke ek behad shandar cinematic sparklers burst dete hain jo varmala ko epic bana deta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-smog text-info"></i> Low-Lying Dry Ice Heavy Cloud Effect Machines</li>
-                    <li><i class="fa-solid fa-bolt text-warning"></i> Safe Electronic Non-Hazardous Cold Pyros</li>
-                    <li><i class="fa-solid fa-star text-light"></i> Perfect Audio-Visual Synced Varmala Moments</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 8: MAJESTIC PADMAVATI THEME ENTRY -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Vintage Royal Heritage</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Majestic <span class="gold-serif">Padmavati Theme Entry</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Experience the ultimate heritage aesthetic with our bespoke Padmavati Theme Entry. This high-end concept seamlessly integrates rich Rajasthani folk culture, traditional Ghoomar dancers, imperial palanquins, and royal escorts. The bride's grand entry unfolds with regal magnificence accompanied by majestic dhol rhythms, instantly transforming the venue into an ancient royal court and offering her a true queen-like experience.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/fc/ac/2e/fcac2e087b98abf3cbf23871dc9199c2.jpg" alt="Majestic Padmavati Theme Entry" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Padmavati+Theme+Entry';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-crown text-warning me-2"></i> Traditional Shahi Palki & Royal Escorts</li>
+                        <li><i class="fa-solid fa-users text-danger me-2"></i> Uniformed Ghoomar Dancers & Cultural Artists</li>
+                        <li><i class="fa-solid fa-gavel text-light me-2"></i> Authentic Rajasthani Palace Style Motifs</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Dreamy & Fairytale Atmosphere</span>
-            <h3 class="service-display-title mt-2 mb-3">Dreamy <span class="gold-serif">Bubble Blast Entry</span></h3>
-            <p class="service-main-para">Dreamy Bubble Blast Entry aapke celebration me ek soft, playful aur pari-kahani jaisa magic jadd deti hai. Hamari high-output automated bubble machines entry pathway ke dono taraf se hazaaron floating bubbles release karti hain. Jab lights in floating bubbles par parti hain, toh ek behad hi khoobsoorat crystal glow create hota hai, jo bachon se lekar bado tak sabhi guests ko spellbound kar deta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-circle-nodes text-info"></i> High-Output Heavy Automated Bubble Blowers</li>
-                    <li><i class="fa-solid fa-wand-magic text-warning"></i> Dreamy Floating Crystal Visual Atmosphere</li>
-                    <li><i class="fa-solid fa-heart text-danger"></i> Best Suited for Romantic Walkway Portrait Shots</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 9: DRY ICE FOG & COLDFIRE ENTRY -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Cinematic Sensory Spectacle</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Dry Ice <span class="gold-serif">Fog & Coldfire Entry</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        The combination of Dry Ice Fog and Coldfire Entry is our most blockbuster and highly demanded production. Low-lying, heavy dry ice machines produce a dense, cascading cloud effect across the floor, making you feel as though you are walking amongst the stars. At that precise pinnacle moment, perfectly timed cold-pyro sparklers trigger automatically, delivering a breathtaking cinematic burst that elevates the Varmala exchange to epic proportions.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/7a/45/19/7a45199fc90ade203db060889582dbb5.jpg" alt="Dry Ice Fog and Coldfire Varmala Entry Setup" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Fog+and+Coldfire+Entry';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-smog text-info me-2"></i> Low-Lying Dry Ice Heavy Cloud Effect Machines</li>
+                        <li><i class="fa-solid fa-bolt text-warning me-2"></i> Safe Electronic Non-Hazardous Cold Pyros</li>
+                        <li><i class="fa-solid fa-star text-light me-2"></i> Perfect Audio-Visual Synced Varmala Moments</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/bubble-entry.jpg" alt="Dreamy Bubble Entry Concept" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Dreamy+Bubble+Entry';">
+
         </div>
     </div>
 </div>
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/ganga-aarti.jpg" alt="Spiritual Ganga Aarti Theme Layout" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Ganga+Aarti+Theme';">
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Spiritual Aura & Divine Blessing</span>
-            <h3 class="service-display-title mt-2 mb-3">Divine <span class="gold-serif">Ganga Aarti Theme</span></h3>
-            <p class="service-main-para">Ganga Aarti Theme entry aapke shubh vivah utsav ko Kashi aur Haridwar ke paavan ghaton jaisa pavitra aur majestic ambiance pradan karti hai. Is high-end setup me sanskriti aur parampara ko dhyan me rakhte hue specialized traditional brass lamps, heavy smoke triggers aur spiritual chanting soundtracks ko integrate kiya jata hai. Panditon dwara live shlok ucharan aur mahan aarti ke deepakon ki roshni ke beech jab varmala ceremony hoti hai, toh poora venue ek divine mandir darbaar jaisa anubhav deta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-gopuram text-warning"></i> Authentic Kashi Style Heavy Brass Lamps & Stand Setups</li>
-                    <li><i class="fa-solid fa-om text-danger"></i> Audio-Synced Spiritual Vedic Shlokas & Chanting Soundtracks</li>
-                    <li><i class="fa-solid fa-fire-burner text-light"></i> Live Dynamic Diya Light Effects & Heavy Fog Clouds</li>
-                </ul>
+<!-- ============================================================== -->
+<!-- BLOCK 10: DREAMY BUBBLE BLAST ENTRY -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Dreamy & Fairytale Atmosphere</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Dreamy <span class="gold-serif">Bubble Blast Entry</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        The Dreamy Bubble Blast Entry infuses a soft, playful, and fairytale-like magic into your celebration. Our high-output automated bubble machines release thousands of floating bubbles from both sides of the entry pathway. When the ambient lights hit these cascading spheres, it creates an incredibly gorgeous crystal glow that leaves guests of all ages completely spellbound.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/3e/1f/01/3e1f01d857991dc236c211d6921aacf0.jpg" alt="Dreamy Bubble Entry Concept" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Dreamy+Bubble+Blast+Entry';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-circle-nodes text-info me-2"></i> High-Output Heavy Automated Bubble Blowers</li>
+                        <li><i class="fa-solid fa-wand-magic text-warning me-2"></i> Dreamy Floating Crystal Visual Atmosphere</li>
+                        <li><i class="fa-solid fa-heart text-danger me-2"></i> Best Suited for Romantic Walkway Portrait Shots</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Mystical Devotion & Grandeur</span>
-            <h3 class="service-display-title mt-2 mb-3">Majestic <span class="gold-serif">Adiyogi Varmala Theme</span></h3>
-            <p class="service-main-para">Majestic Adiyogi Varmala Theme hamari sabse premium aur cinematic high-scale event services me se ek hai. Center stage par Bhagwan Shiva ke Adiyogi avatar ka ek vishal aur dhasu sculpture backdrop design kiya jata hai. Varmala ke dhasu moment par low-lying dry ice fog machines aur strategic multi-color laser lights se pure stage ko Kailash Parvat jaisa mystical look diya jata hai. Damru beats, shiv tandav stotram audio aur cold fire sparklers ke automatic triggers is shahi entry aur varmala utsav ko ek agle hi adbhut level par lekar jate hain.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-mountain text-info"></i> Premium Giant Adiyogi Sculpture Stage Backdrop Background</li>
-                    <li><i class="fa-solid fa-bolt text-warning"></i> High-Tech Audio-Visual Synced Damru & Tandav Beats</li>
-                    <li><i class="fa-solid fa-wand-magic-sparkles text-success"></i> Combined Dry Ice Cloud Effects & Cold Fire Pyro Explosions</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 11: DIVINE GANGA AARTI THEME -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Spiritual Aura & Divine Blessing</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Divine <span class="gold-serif">Ganga Aarti Theme</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        The Ganga Aarti Theme entry bestows a sacred and majestic ambiance upon your auspicious wedding celebration, reminiscent of the holy ghats of Kashi and Haridwar. Honoring deep cultural traditions, this high-end setup integrates specialized traditional brass lamps, heavy atmospheric smoke triggers, and spiritual chanting soundtracks. As the Varmala ceremony unfolds amidst live Vedic hymn recitations by pandits and the brilliant glow of ceremonial oil lamps, the entire venue transforms into a divine temple court experience.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/41/46/55/41465577d312f6b31a29407a21c26e61.jpg" alt="Spiritual Ganga Aarti Theme Layout" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Divine+Ganga+Aarti+Theme';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-gopuram text-warning me-2"></i> Authentic Kashi Style Heavy Brass Lamps & Stands</li>
+                        <li><i class="fa-solid fa-om text-danger me-2"></i> Audio-Synced Spiritual Vedic Shlokas & Chants</li>
+                        <li><i class="fa-solid fa-fire-burner text-light me-2"></i> Live Dynamic Diya Light Effects & Heavy Fog Clouds</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/adiyogi-theme.jpg" alt="Majestic Adiyogi Varmala Stage Setup" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Adiyogi+Varmala+Theme';">
-        </div>
-    </div>
-</div>
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/orchestra-show.jpg" alt="Live Orchestra Show" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Live+Orchestra+Show';">
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Elite Stage Entertainment</span>
-            <h3 class="service-display-title mt-2 mb-3">Live <span class="gold-serif">Orchestra Stage Show</span></h3>
-            <p class="service-main-para">Hamari Live Orchestra Service aapke sangeet aur reception stage ko ek complete concert floor me badal deti hai. Professional bollywood-style star singers, energetic group stage dancers, aur high-profile charismatic anchors ke sath pure event ki timeline ko manage kiya jata hai. Premium sound engineering aur interactive anchoring ke sath guests ko poori tarah engaged aur entertained rakha jata hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-microphone text-danger"></i> Professional Male & Female Star Vocalists</li>
-                    <li><i class="fa-solid fa-bolt text-warning"></i> Highly Engaging Corporate & Wedding Anchors (Emcee)</li>
-                    <li><i class="fa-solid fa-icons text-info"></i> Dynamic Background Stage Dancers & Troupes</li>
-                </ul>
-            </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Devotional & Melodious Tracks</span>
-            <h3 class="service-display-title mt-2 mb-3">Track Singing <span class="gold-serif">& Devotional Jagran</span></h3>
-            <p class="service-main-para">Sufi melodies, semi-classical tracks aur high-end Track Singing setups ke sath aapke intimate family functions me ek surili mehfil sajayi jati hai. Iske sath hi, mata ka jagran aur chowki utsav ke liye hamare paas special devotional singers aur heavy sound system arrangements hain, jo poore parivar ko bhakti-bhav aur shahi sanskriti ke sath ek pavitra anubhav pradan karte hain.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-music text-primary"></i> Studio Quality Track-Based Melodious Singing</li>
-                    <li><i class="fa-solid fa-gopuram text-warning"></i> Mega Devotional Jagran & Chowki Stage Setups</li>
-                    <li><i class="fa-solid fa-sliders text-light"></i> Crystal Clear Vocal Tuning & Sound Optimization</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 12: MAJESTIC ADIYOGI VARMALA THEME -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Mystical Devotion & Grandeur</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Majestic <span class="gold-serif">Adiyogi Varmala Theme</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        The Majestic Adiyogi Varmala Theme is one of our most premium, cinematic, and high-scale event productions. At the center stage, a massive and striking sculpture of Lord Shiva's Adiyogi avatar forms the breathtaking backdrop. During the pinnacle Varmala moment, heavy low-lying dry ice fog machines and strategic multi-color laser arrays wrap the stage in a mystical look inspired by Mount Kailash. Powerful damru beats, Shiv Tandav Stotram audio, and automatic cold pyro triggers elevate this royal entry and exchange to an extraordinary, awe-inspiring level.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/2f/3d/aa/2f3daa3b4251a958d2d56470aab1b1fd.jpg" alt="Majestic Adiyogi Varmala Stage Setup" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Majestic+Adiyogi+Varmala+Theme';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-mountain text-info me-2"></i> Premium Giant Adiyogi Sculpture Stage Backdrop</li>
+                        <li><i class="fa-solid fa-bolt text-warning me-2"></i> High-Tech Audio-Visual Synced Damru & Tandav Beats</li>
+                        <li><i class="fa-solid fa-wand-magic-sparkles text-success me-2"></i> Dry Ice Cloud Effects & Cold Fire Pyro Explosions</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/track-singing.jpg" alt="Track Singing and Jagran Setup" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Track+Singing+%26+Jagran';">
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/dance-troupe.jpg" alt="Solo and Group Dance Performers" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Solo+%26+Group+Dance';">
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Choreographed Visual Spectacle</span>
-            <h3 class="service-display-title mt-2 mb-3">Solo & Group <span class="gold-serif">Dance Performances</span></h3>
-            <p class="service-main-para">Sangeet night ko mega-hit banane ke liye hamari team customized choreography aur elite dance troupes provide karti hai. Professional theme-based solo dance performances se lekar high-octane multi-performer group dance sequences tak, har ek act ko grand costumes aur spectacular graphics panels ke sath synchronize kiya jata hai taaki aapka family sangeet ek award-show jaisa grand dikhe.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-user-ninja text-info"></i> Premium Theme-Based Solo Dance Artists</li>
-                    <li><i class="fa-solid fa-users-viewfinder text-success"></i> Synchronized Multi-Genre Group Dance Troupes</li>
-                    <li><i class="fa-solid fa-shirt text-warning"></i> Grand Designer Costumes & Dynamic Stage Props</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 13: LIVE ORCHESTRA STAGE SHOW -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center" id="mus">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Elite Stage Entertainment</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Live <span class="gold-serif">Orchestra Stage Show</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Our Live Orchestra Service completely reimagines your sangeet and reception stage into a full-scale live concert arena. The entire event timeline is masterfully coordinated featuring professional, Bollywood-style star singers, highly energetic stage choreography groups, and charismatic high-profile emcees. Blending premium sound engineering with immersive live hosting, this production ensures your guests remain thoroughly engaged, unified, and endlessly entertained throughout the night.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/fa/cf/26/facf265ad31057a2cc5556f544db55cb.jpg" alt="Live Orchestra Show" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Live+Orchestra+Stage+Show';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-microphone text-danger me-2"></i> Professional Male & Female Star Vocalists</li>
+                        <li><i class="fa-solid fa-bolt text-warning me-2"></i> Highly Engaging Corporate & Wedding Anchors (Emcee)</li>
+                        <li><i class="fa-solid fa-icons text-info me-2"></i> Dynamic Background Stage Dancers & Troupes</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Traditional Beats & Electronic Mix</span>
-            <h3 class="service-display-title mt-2 mb-3">Grand Brass Band <span class="gold-serif">& DJ Band Combo</span></h3>
-            <p class="service-main-para">Hamara signature Grand Brass Band setup desh ke sabse elite baarat bands me se ek hai. Immaculate traditional uniforms me professional brass instrument players jab energetic dhol-tasha ke sath thirakte hain, toh raunak dugni ho jati hai. Iske sath hi, hum DJ Band setup offering dete hain, jahan traditional liver instruments directly live electronic club DJ tracks ke sath sync hokar baarat ko non-stop carnival me badal dete hain.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-trumpet text-danger"></i> Uniformed Royal Brass Band Instrument Squad</li>
-                    <li><i class="fa-solid fa-compact-disc text-warning"></i> High-Tech Live Hybrid DJ Band Sync Processing</li>
-                    <li><i class="fa-solid fa-drum text-light"></i> Heavy Rhythm Punjabi Dhols & Tasha Artists</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 14: TRACK SINGING & DEVOTIONAL JAGRAN -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Devotional & Melodious Tracks</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Track Singing <span class="gold-serif">& Devotional Jagran</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Curate an intimate, soul-stirring musical gathering for your close family events with our premium track-singing setups, specializing in rich Sufi melodies and elegant semi-classical tracks. Alongside this, we offer distinguished arrangements for Mata Ka Jagran and Chowki celebrations, complete with premier devotional singers and powerful audio systems. This combination introduces an authentic, sacred atmosphere that envelops your entire family in pure devotion and majestic tradition.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/c0/ae/2e/c0ae2e59130c788ace82b63e0376ab18.jpg" alt="Track Singing and Jagran Setup" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Track+Singing+and+Jagran+Setup';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-music text-primary me-2"></i> Studio Quality Track-Based Melodious Singing</li>
+                        <li><i class="fa-solid fa-gopuram text-warning me-2"></i> Mega Devotional Jagran & Chowki Stage Setups</li>
+                        <li><i class="fa-solid fa-sliders text-light me-2"></i> Crystal Clear Vocal Tuning & Sound Optimization</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/brass-band.jpg" alt="Grand Brass Band Service" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Brass+Band+%26+DJ+Band';">
+</div>
+<!-- ============================================================== -->
+<!-- BLOCK 15: SOLO & GROUP DANCE PERFORMANCES -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Choreographed Visual Spectacle</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Solo & Group <span class="gold-serif">Dance Performances</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        To turn your Sangeet night into a mega-hit event, our team provides customized choreography and elite dance troupes. From professional theme-based solo dance performances to high-octane multi-performer group dance sequences, every single act is synchronized with grand designer costumes and spectacular graphics panels. This seamless integration ensures your family Sangeet looks as magnificent and polished as a major award-show production.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/ff/73/be/ff73bed9cad1f61c423d31f3d208249b.jpg" alt="Solo and Group Dance Performers" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Solo+%26+Group+Dance+Performances';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-user-ninja text-info me-2"></i> Premium Theme-Based Solo Dance Artists</li>
+                        <li><i class="fa-solid fa-users-viewfinder text-success me-2"></i> Synchronized Multi-Genre Group Dance Troupes</li>
+                        <li><i class="fa-solid fa-shirt text-warning me-2"></i> Grand Designer Costumes & Dynamic Stage Props</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/hanging-dj.jpg" alt="Hanging DJ Console Setup" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Hanging+DJ+Setup';">
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Futuristic Aerial Party Sound</span>
-            <h3 class="service-display-title mt-2 mb-3">Exclusive <span class="gold-serif">Hanging DJ Setup</span></h3>
-            <p class="service-main-para">Party floor par premium excitement lane ke liye hamara Hanging DJ Setup ek revolution hai. Standard floor setups ko bypass karke, pure DJ console aur light truss platform ko heavy-duty mechanical cranes ya overhead structural trussing ke sath hawa me lift (hang) kiya jata hai. Intelligent moving heads, vertical smoke pyros aur visual LED walls ke sath jab DJ hawa me club beats drop karta hai, toh guests ka clubbing experience next level ho jata hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-arrows-up-to-line text-info"></i> Overhead Mechanical Crane Suspended Truss Platform</li>
-                    <li><i class="fa-solid fa-volume-high text-success"></i> Premium High-Output Pro Audio Sound Systems</li>
-                    <li><i class="fa-solid fa-lightbulb text-warning"></i> Matrix Array Moving Lights & Beam Lasers</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 16: GRAND BRASS BAND & DJ BAND COMBO -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Traditional Beats & Electronic Mix</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Grand Brass Band <span class="gold-serif">& DJ Band Combo</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Our signature Grand Brass Band setup stands as one of the most elite wedding bands in the country. Featuring professional brass instrument players dressed in immaculate traditional uniforms alongside energetic dhol-tasha rhythms, it brings unparalleled vibrance to the street. Complementing this is our hybrid DJ Band setup, where traditional live instruments sync directly with electronic club tracks to transform your procession into a non-stop carnival.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/79/7b/a3/797ba39db0c90a91c9aff19a390fe04f.jpg" alt="Grand Brass Band Service" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Grand+Brass+Band+and+DJ+Combo';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-trumpet text-danger me-2"></i> Uniformed Royal Brass Band Instrument Squad</li>
+                        <li><i class="fa-solid fa-compact-disc text-warning me-2"></i> High-Tech Live Hybrid DJ Band Sync Processing</li>
+                        <li><i class="fa-solid fa-drum text-light me-2"></i> Heavy Rhythm Punjabi Dhols & Tasha Artists</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Pure Indian Tradition & Rituals</span>
-            <h3 class="service-display-title mt-2 mb-3">Classical Shehnai <span class="gold-serif">& Royal Doli Setup</span></h3>
-            <p class="service-main-para">Vivah ke sabse pavitra aur bhavuk palon ko shahi dhang se nibhane ke liye hum traditional Shehnai aur Royal Doli services pradan karte hain. Hamare classical Shehnai vadhak aur tasha players entrance par mangal dhwani bajiakar shubh manglik vibes create karte hain. Iske sath hi, bidaai ke pavitra moment ke liye beautifully carved golden royal dolis aur uniformed premium escorts provide kiye jate hain, jo parampara ko ek absolute shahi samman dete hain.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-gavel text-warning"></i> Handcrafted Golden Carved Vintage Royal Doli Layout</li>
-                    <li><i class="fa-solid fa-music text-danger"></i> Veteran Classical Shehnai Maestros & Mangal Dhwani</li>
-                    <li><i class="fa-solid fa-user-shield text-light"></i> Uniformed Traditional Doli Bearers & Escorts</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 17: EXCLUSIVE HANGING DJ SETUP -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Futuristic Aerial Party Sound</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Exclusive <span class="gold-serif">Hanging DJ Setup</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Engineered to bring absolute premium excitement to the dance floor, our Hanging DJ Setup represents a true party revolution. Bypassing traditional ground layouts, the entire custom DJ console and lighting truss platform are suspended in mid-air using heavy-duty mechanical cranes or robust overhead structural staging. Enhanced by intelligent moving heads, vertical smoke pyros, and vibrant LED walls, this aerial music experience elevates clubbing to the absolute next level.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/b9/ea/12/b9ea120ea68a8336386535a91a99a57a.jpg" alt="Hanging DJ Console Setup" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Exclusive+Hanging+DJ+Setup';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-arrows-up-to-line text-info me-2"></i> Overhead Mechanical Crane Suspended Truss Platform</li>
+                        <li><i class="fa-solid fa-volume-high text-success me-2"></i> Premium High-Output Pro Audio Sound Systems</li>
+                        <li><i class="fa-solid fa-lightbulb text-warning me-2"></i> Matrix Array Moving Lights & Beam Lasers</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/doli-shehnai.jpg" alt="Traditional Doli and Shehnai Group" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Shehnai+%26+Royal+Doli';">
-        </div>
-    </div>
-</div>
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/haldi-decor.jpg" alt="Shahi Yellow Haldi Decoration" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Haldi+Decoration';">
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Vibrant Yellow Festivities</span>
-            <h3 class="service-display-title mt-2 mb-3">Shahi Yellow <span class="gold-serif">Haldi Decoration</span></h3>
-            <p class="service-main-para">Hamari Haldi decoration service aapke rasam-riwaz me asli raunak aur utsah bhar deti hai. Traditional bright yellow aur orange marigold (genda phool) themes, heavy floral drapes, aur matching seating arrangements ko bohot hi sundar tarike se design kiya jata hai. Is shahi traditional backdrop ke sath aapke haldi ke function ki photographs ekdum bright, colorful aur full of life aati hain jo hamesha ke liye yaadgaar ban jati hain.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-holly-berry text-warning"></i> Traditional Marigold Loops & Yellow Drapery Themes</li>
-                    <li><i class="fa-solid fa-dharmachakra text-danger"></i> Decorative Urli Setups & Flower Petals Showers</li>
-                    <li><i class="fa-solid fa-camera text-info"></i> Trendy Photo-Booths With Fun Quirky Haldi Props</li>
-                </ul>
-            </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Elegant & Colorful Hangings</span>
-            <h3 class="service-display-title mt-2 mb-3">Premium Intricate <span class="gold-serif">Mehndi Decoration</span></h3>
-            <p class="service-main-para">Mehndi function ke liye hum ek bohot hi soothing aur colorful festive environment taiyar karte hain. Multi-color drapes, green foliage overlays, handcrafted seating mattresses, aur elegant ceiling hangings (jaise dreamcatchers ya traditional tassels) ka use kiya jata hai. Dulhan ke seating area ko ek central attraction look diya jata hai taaki mehndi lagwate waqt dulhan poori tarah comfortable rahe aur background ekdum royal dikhe.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-palette text-success"></i> Vibrant Multi-Color Drapes & Bohemians Hangings</li>
-                    <li><i class="fa-solid fa-couch text-warning"></i> Specialized Premium Seating Lounges For Bride & Guests</li>
-                    <li><i class="fa-solid fa-lightbulb text-light"></i> Fairy Lights & Moroccan Lanterns Ambient Lighting</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 18: CLASSICAL SHEHNAI & ROYAL DOLI SETUP -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Pure Indian Tradition & Rituals</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Classical Shehnai <span class="gold-serif">& Royal Doli Setup</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        To honor the most sacred and emotional milestones of your wedding with utmost grace, we provide traditional Shehnai and Royal Doli services. Our veteran classical Shehnai virtuosos and tasha players welcome guests at the entrance with auspicious melodies, crafting a deeply traditional atmosphere. For the sacred moment of Bidai, beautifully handcrafted golden palanquins and premium uniformed escorts ensure the transition is treated with absolute royal dignity.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/64/61/ad/6461ad808bc4e0a4075da4843e8d373b.jpg" alt="Traditional Doli and Shehnai Group" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Classical+Shehnai+and+Royal+Doli';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-gavel text-warning me-2"></i> Handcrafted Golden Carved Vintage Royal Doli Layout</li>
+                        <li><i class="fa-solid fa-music text-danger me-2"></i> Veteran Classical Shehnai Maestros & Mangal Dhwani</li>
+                        <li><i class="fa-solid fa-user-shield text-light me-2"></i> Uniformed Traditional Doli Bearers & Escorts</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/mehndi-decor.jpg" alt="Elegant Mehndi Decor Setup" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Mehndi+Decoration';">
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/flower-decoration.jpg" alt="Exotic Venue Flower Decoration" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Premium+Flower+Decor';">
+
+<!-- ============================================================== -->
+<!-- BLOCK 19: SHAHI YELLOW HALDI DECORATION -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center" id="decor">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Vibrant Yellow Festivities</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Shahi Yellow <span class="gold-serif">Haldi Decoration</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Our bespoke Haldi decoration service infuses authentic brilliance and unbridled joy into your pre-wedding customs. Traditional vibrant yellow and orange marigold themes, heavy premium floral drapery, and matching regal seating configurations are flawlessly conceptualized. Set against this grand traditional backdrop, your celebration portraiture emerges exceptionally bright, rich in color, and completely full of life to stay unforgettable forever.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/e9/0c/0e/e90c0e84fba21d2aa8a13ee4767b1a42.jpg" alt="Shahi Yellow Haldi Decoration" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Shahi+Yellow+Haldi+Decoration';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-holly-berry text-warning me-2"></i> Traditional Marigold Loops & Yellow Drapery Themes</li>
+                        <li><i class="fa-solid fa-dharmachakra text-danger me-2"></i> Decorative Urli Setups & Flower Petals Showers</li>
+                        <li><i class="fa-solid fa-camera text-info me-2"></i> Trendy Photo-Booths With Fun Quirky Haldi Props</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
+            </div>
+
         </div>
     </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Luxury Floral Architecture</span>
-            <h3 class="service-display-title mt-2 mb-3">Exotic Venue <span class="gold-serif">Flower Decoration</span></h3>
-            <p class="service-main-para">Wedding venue ko ek grand palace look dene ke liye hamari Premium Flower Decoration service sabse best hai. Main entrance gates, grand pathways, mandap setups aur high-end wedding stages ko exotic imported flowers (jaise roses, orchids, lilies) ke custom structural mapping ke sath sajaya jata hai. Luxury lighting aur pristine floral installations ka combination pure venue ko ek majestic aur cinematic canvas me badal deta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-gopuram text-success"></i> Elite Stage Backdrops & Royal Mandap Floral Architectures</li>
-                    <li><i class="fa-solid fa-wand-magic-sparkles text-warning"></i> Exotic Imported Flowers (Roses, Orchids & Carnations) Setup</li>
-                    <li><i class="fa-solid fa-lightbulb text-light"></i> Perfect Synchronization With Vintage Ambient Luxury Lighting</li>
-                </ul>
+</div>
+    </div>
+	<!-- ============================================================== -->
+<!-- BLOCK 20: PREMIUM INTRICATE MEHNDI DECORATION -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Elegant & Colorful Hangings</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Premium Intricate <span class="gold-serif">Mehndi Decoration</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        For the Mehndi ceremony, we curate a highly soothing, vibrant, and colorful festive environment. This layout integrates multi-color drapes, rich green foliage overlays, handcrafted seating mattresses, and elegant ceiling hangings such as custom dreamcatchers and traditional tassels. The bride's seating lounge is designed as the absolute center of attraction, ensuring maximum comfort while providing a magnificent, royal background for timeless photographs.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/a0/5c/f1/a05cf1917469dbc60bd99d7a72b7c88a.jpg" alt="Elegant Mehndi Decor Setup" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Premium+Mehndi+Decoration';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-palette text-success me-2"></i> Vibrant Multi-Color Drapes & Bohemian Hangings</li>
+                        <li><i class="fa-solid fa-couch text-warning me-2"></i> Specialized Premium Seating Lounges For Bride & Guests</li>
+                        <li><i class="fa-solid fa-lightbulb text-light me-2"></i> Fairy Lights & Moroccan Lanterns Ambient Lighting</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Modern Creative Party Concepts</span>
-            <h3 class="service-display-title mt-2 mb-3">Luxury Birthday <span class="gold-serif">Balloon Decoration</span></h3>
-            <p class="service-main-para">Birthday parties aur theme celebrations ko extra-ordinary banane ke liye hum advanced, modern balloon styling provide karte hain. Standard designs ko chhodkar, hamari team organic balloon arches, pastel/metallic color themes, dynamic neon signage integrations, aur custom character theme backdrops (jaise Jungle theme, Princess theme, or Minimalist Luxury) create karti hai jo bacho aur bado dono ke events ko super premium aur interactive bana deti hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-circle-nodes text-info"></i> Organic High-End Balloon Arches & Garlands Structures</li>
-                    <li><i class="fa-solid fa-palette text-primary"></i> Premium Pastel, Chrome & Metallic Color Theme Coordinates</li>
-                    <li><i class="fa-solid fa-cake-candles text-warning"></i> LED Neon Signage, Cutouts & Personalized Backdrops Mapping</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 21: EXOTIC VENUE FLOWER DECORATION -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Luxury Floral Architecture</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Exotic Venue <span class="gold-serif">Flower Decoration</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        To bestow a majestic palace look upon your wedding venue, our Premium Flower Decoration service offers the ultimate structural solution. Main entrance gates, grand pathways, mandap setups, and high-end wedding stages are embellished with exquisite architectural mapping using premium imported flowers like roses, orchids, and lilies. The flawless combination of luxury lighting and pristine floral installations transforms the entire venue into a cinematic, royal canvas.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/46/f2/1d/46f21ddeff4d5ddd50cdab7ad10b109b.jpg" alt="Exotic Venue Flower Decoration" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Exotic+Venue+Flower+Decoration';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-gopuram text-success me-2"></i> Elite Stage Backdrops & Royal Mandap Floral Architectures</li>
+                        <li><i class="fa-solid fa-wand-magic-sparkles text-warning me-2"></i> Exotic Imported Flowers Setup (Roses, Orchids & Carnations)</li>
+                        <li><i class="fa-solid fa-lightbulb text-light me-2"></i> Perfect Synchronization With Vintage Ambient Luxury Lighting</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/birthday-balloon-decor.jpg" alt="Premium Birthday Balloon Decor" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Birthday+Balloon+Decor';">
-        </div>
-    </div>
-</div>
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/fruit-chaat-counter.jpg" alt="Exotic Fruit Chaat Counter" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Fruit+Chaat+Counter';">
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Fresh & Healthy Culinary Art</span>
-            <h3 class="service-display-title mt-2 mb-3">Exotic Fruit <span class="gold-serif">Chaat Counter</span></h3>
-            <p class="service-main-para">Guests ko ek refreshing aur healthy treat dene ke liye hamara Exotic Fruit Chaat Counter ekdum perfect option hai. Isme desh-videsh se mangwaye gaye taaza fruits (jaise kiwi, strawberry, grapes, aur premium apples) ko live counter par client ki choice ke mutabik cut kiya jata hai. Hamare gourmet chefs ke special secret masalon aur honey-lemon dressing ke sath ise ek shahi dhang se serve kiya jata hai, jo bade-bado ka dil jeet leta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-apple-whole text-danger"></i> Wide Range of Imported & Seasonal Fresh Fruits</li>
-                    <li><i class="fa-solid fa-jar text-warning"></i> Live Custom Dressing With Royal Spice Infusions</li>
-                    <li><i class="fa-solid fa-ice-cream text-info"></i> Hygenic Ice-Bed Displays For Ultimate Crisp Freshness</li>
-                </ul>
-            </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Traditional Royal Refreshment</span>
-            <h3 class="service-display-title mt-2 mb-3">Traditional Shahi <span class="gold-serif">Paan Boutique</span></h3>
-            <p class="service-main-para">Indian weddings ka jashn bina paan ke adhoora hai. Hamara Shahi Paan Counter ek traditional boutique setup hai jahan veteran paan masters (banarasi paan experts) live paan taiyar karte hain. Standard meetha paan se lekar modern trending flavors jaise Ice Paan, Fire Paan, Chocolate Paan aur Royal Gulkand Paan tak, hum ek vishal menu offer karte hain jo khane ke baad aapke guests ka muah mitha kar dega aur unhe ek rajwadi experience dega.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-leaf text-success"></i> Authentic Banarasi & Maghai Premium Betel Leaves</li>
-                    <li><i class="fa-solid fa-fire text-danger"></i> Interactive Live Counters Featuring Ice & Fire Paan Acts</li>
-                    <li><i class="fa-solid fa-box-tissue text-warning"></i> Silver Foil (Chandi Work) Coated Luxury Gulkand Stuffs</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 22: LUXURY BIRTHDAY BALLOON DECORATION -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Modern Creative Party Concepts</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Luxury Birthday <span class="gold-serif">Balloon Decoration</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        To elevate birthday parties and milestone celebrations into extraordinary experiences, we provide advanced, high-end balloon styling. Bypassing basic designs, our creative team crafts fluid organic balloon arches, rich pastel or metallic color palettes, dynamic neon signage integrations, and custom character theme backdrops such as Jungle, Princess, or Minimalist Luxury concepts that make events incredibly premium and interactive for all age groups.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/9b/6d/fa/9b6dfab40805ee9e874f31c250914bac.jpg" alt="Premium Birthday Balloon Decor" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Luxury+Birthday+Balloon+Decoration';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-circle-nodes text-info me-2"></i> Organic High-End Balloon Arches & Garlands Structures</li>
+                        <li><i class="fa-solid fa-palette text-primary me-2"></i> Premium Pastel, Chrome & Metallic Color Theme Coordinates</li>
+                        <li><i class="fa-solid fa-cake-candles text-warning me-2"></i> LED Neon Signage, Cutouts & Personalized Backdrops Mapping</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/paan-counter.jpg" alt="Traditional Shahi Paan Counter" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Shahi+Paan+Counter';">
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row mb-5 pb-5">
-    <div class="col-lg-5">
-        <div class="stylish-image-frame">
-            <img src="path/to/mocktail-bar.jpg" alt="Live Mocktail and Mojito Bar" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Live+Mocktail+Bar';">
+
+<!-- ============================================================== -->
+<!-- BLOCK 23: EXOTIC FRUIT CHAAT COUNTER -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center" id="food">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Fresh & Healthy Culinary Art</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Exotic Fruit <span class="gold-serif">Chaat Counter</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        Offering guests a refreshing, gourmet, and health-conscious culinary treat, our Exotic Fruit Chaat Counter stands as a premier catering asset. This installation features premium seasonal and global imports like kiwi, strawberries, crisp apples, and grapes, sliced live at the pavilion according to individual preferences. Tossed by expert chefs in signature secret spices and royal honey-lemon dressings, it delivers a sophisticated flavor profile that delights discerning palates.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/1200x/a8/18/af/a818af880631f6de74a5c3e7e4c113e2.jpg" alt="Exotic Fruit Chaat Counter" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Exotic+Fruit+Chaat+Counter';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-apple-whole text-danger me-2"></i> Wide Range of Imported & Seasonal Fresh Fruits</li>
+                        <li><i class="fa-solid fa-jar text-warning me-2"></i> Live Custom Dressing With Royal Spice Infusions</li>
+                        <li><i class="fa-solid fa-ice-cream text-info me-2"></i> Hygienic Ice-Bed Displays For Ultimate Crisp Freshness</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
+            </div>
+
         </div>
     </div>
-    <div class="col-lg-7">
-        <div class="stylish-content-box ps-lg-4">
-            <span class="content-mini-tag text-uppercase">Premium Interactive Beverages</span>
-            <h3 class="service-display-title mt-2 mb-3">Live Mocktail <span class="gold-serif">& Mojito Bar</span></h3>
-            <p class="service-main-para">Aapke event me high-end corporate bar touch add karne ke liye hamara Live Mocktail Bar ek absolute show-stopper hai. Professional flair bartenders (jugglers) live guest interaction ke sath signature non-alcoholic drinks jaise Mint Mojitos, Blue Lagoon, Watermelon Freezers aur Cranberry Blasts shake karte hain. Glassware styling aur led smoke bar aesthetics ke sath yeh counter young generation aur premium guests ke liye sabse bada attraction point banta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-glass-water-droplet text-info"></i> Professional Juggling & Flair Bartending Crew Acts</li>
-                    <li><i class="fa-solid fa-wine-glass text-primary"></i> Premium Glassware Styling & Neon Colored Blends</li>
-                    <li><i class="fa-solid fa-lemon text-success"></i> Fresh Mint, Berries & Exotic Fruit Syrups Menu</li>
-                </ul>
+	<!-- ============================================================== -->
+<!-- BLOCK 24: TRADITIONAL SHAHI PAAN BOUTIQUE -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Traditional Royal Refreshment</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Traditional Shahi <span class="gold-serif">Paan Boutique</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        An authentic Indian wedding celebration remains incomplete without the timeless tradition of paan. Our Shahi Paan Counter is designed as a luxury boutique installation where veteran Banarasi culinary experts prepare customized delicacies live. Ranging from classic sweet preparations to modern trending innovations like Ice Paan, Fire Paan, artisanal Chocolate blends, and Royal Gulkand infusions, we offer an expansive menu that serves as a magnificent regal digestif for your guests.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/d2/5e/bb/d25ebbbe552e1852921c67e2e0311b0d.jpg" alt="Traditional Shahi Paan Counter" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Traditional+Shahi+Paan+Boutique';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-leaf text-success me-2"></i> Authentic Banarasi & Maghai Premium Betel Leaves</li>
+                        <li><i class="fa-solid fa-fire text-danger me-2"></i> Interactive Live Counters Featuring Ice & Fire Paan Acts</li>
+                        <li><i class="fa-solid fa-box-tissue text-warning me-2"></i> Silver Foil (Chandi Work) Coated Luxury Gulkand Stuffs</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div class="row align-items-center g-5 stylish-work-row">
-    <div class="col-lg-7 order-2 order-lg-1">
-        <div class="stylish-content-box">
-            <span class="content-mini-tag text-uppercase">Earthy Desi Flavors & Sweets</span>
-            <h3 class="service-display-title mt-2 mb-3">Tandoori Chai <span class="gold-serif">& Matka Kulfi Corner</span></h3>
-            <p class="service-main-para">Winter weddings aur traditional gatherings ke liye hamara live Tandoori Kulhad Chai corner logo ka sabse pasandida spot hai. Bhatti me tapte hue mitti ke kulhad me jab keshari chai ka tadka lagta hai, toh uski bheeni-bheeni khushbu pure venue me phail jati hai. Iske sath hi hum traditional dessert lovers ke liye authentic thandi-thandi Shahi Matka Kulfi aur Rabdi counters setup karte hain, jo pure menu ko ek royal desi heritage finish pradan karta hai.</p>
-            
-            <div class="stylish-pointers-block mt-4">
-                <h5 class="pointers-title text-uppercase">Pointers</h5>
-                <ul class="list-unstyled custom-pointers-list mt-2">
-                    <li><i class="fa-solid fa-fire-burner text-danger"></i> Live Tandoor Clay-Pot Tadka Kulhad Chai Experience</li>
-                    <li><i class="fa-solid fa-mound text-warning"></i> Authentic Kesar Pista Matka Kulfi & Laccha Rabdi</li>
-                    <li><i class="fa-solid fa-mug-hot text-light"></i> Eco-Friendly Mitti Elements For Pure Organic Ambiance</li>
-                </ul>
+
+<!-- ============================================================== -->
+<!-- BLOCK 25: LIVE MOCKTAIL & MOJITO BAR -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Premium Interactive Beverages</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Live Mocktail <span class="gold-serif">& Mojito Bar</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        To introduce a high-end corporate lounge dynamic to your festivities, our Live Mocktail Bar stands as an absolute entertainment show-stopper. Professional flair mixologists engage guests live while shaking signature non-alcoholic creations, including crisp Mint Mojitos, vibrant Blue Lagoons, Watermelon Freezers, and rich Cranberry Blasts. Complete with premium glassware styling and a sleek neon LED smoke bar setup, this station becomes a premier attraction point for your guests.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/80/39/90/8039904113f39daa19943f6110a493dc.jpg" alt="Live Mocktail and Mojito Bar" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Live+Mocktail+and+Mojito+Bar';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-glass-water-droplet text-info me-2"></i> Professional Juggling & Flair Bartending Crew Acts</li>
+                        <li><i class="fa-solid fa-wine-glass text-primary me-2"></i> Premium Glassware Styling & Neon Colored Blends</li>
+                        <li><i class="fa-solid fa-lemon text-success me-2"></i> Fresh Mint, Berries & Exotic Fruit Syrups Menu</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
             </div>
-            
-            <div class="mt-4 pt-2">
-                <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 order-1 order-lg-2">
-        <div class="stylish-image-frame">
-            <img src="path/to/tandoori-chai.jpg" alt="Tandoori Chai and Matka Kulfi Counter" class="img-fluid" onerror="this.src='https://via.placeholder.com/600x750/121824/d4af37?text=Tandoori+Chai+Corner';">
+
         </div>
     </div>
 </div>
 
+
+<!-- ============================================================== -->
+<!-- BLOCK 26: TANDOORI CHAI & MATKA KULFI CORNER -->
+<!-- ============================================================== -->
+<div class="container-fluid px-2 px-md-4 my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-11">
+
+            <div class="custom-service-card text-center text-white">
+                
+                <!-- 1. Mini Tag -->
+                <span class="content-mini-tag text-uppercase d-block mb-2">Earthy Desi Flavors & Sweets</span>
+                
+                <!-- 2. Main Title -->
+                <h3 class="service-display-title text-uppercase mt-2 mb-4">
+                    Tandoori Chai <span class="gold-serif">& Matka Kulfi Corner</span>
+                </h3>
+                
+                <!-- 3. Main Paragraph Description -->
+                <div class="px-3 px-md-5">
+                    <p class="service-main-para">
+                        A highly favored destination for seasonal gatherings and traditional celebrations, our live Tandoori Kulhad Chai corner delivers an unmatched sensory experience. Earthy clay pots are heated intensely in a live brazier before being infused with premium saffron tea, casting a rich, smoked aroma throughout the venue. Alongside this hot beverage experience, we integrate authentic chilled Shahi Matka Kulfi and Laccha Rabdi stations to give your menu a perfect royal heritage finish.
+                    </p>
+                </div>
+                
+                <!-- 4. CENTERED IMAGE (Strict 16:9 Aspect Ratio) -->
+                <div class="centered-image-frame">
+                    <img src="https://i.pinimg.com/736x/d1/65/86/d16586a319164842e439353fcf7516ae.jpg" alt="Tandoori Chai and Matka Kulfi Counter" onerror="this.src='https://via.placeholder.com/1000x562/121824/d4af37?text=Tandoori+Chai+and+Matka+Kulfi+Corner';">
+                </div>
+
+                <!-- 5. Pointers Block -->
+                <div class="stylish-pointers-block mt-4 mb-4 px-2">
+                    <ul class="custom-pointers-list-center">
+                        <li><i class="fa-solid fa-fire-burner text-danger me-2"></i> Live Tandoor Clay-Pot Tadka Kulhad Chai Experience</li>
+                        <li><i class="fa-solid fa-mound text-warning me-2"></i> Authentic Kesar Pista Matka Kulfi & Laccha Rabdi</li>
+                        <li><i class="fa-solid fa-mug-hot text-light me-2"></i> Eco-Friendly Mitti Elements For Pure Organic Ambiance</li>
+                    </ul>
+                </div>
+                
+                <!-- 6. Enquire Button -->
+                <div class="mt-4 pt-2">
+                    <a href="contact.html" class="btn btn-stylish-enquire text-uppercase">Enquire Now</a>
+                </div>
+
+            </div>
+
+        </div>
     </div>
+</div>
+</div>
+
 </section>
-
-
-<style> 
-  /* ==========================================
-   STYLISH RECENT WORK SECTION (PREMIUM THEME)
-   ========================================== */
-.stylish-recent-work {
-    background-color: #050811; 
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    overflow: hidden;
-}
-
-/* Gold Heading Style */
-.stylish-recent-work .section-display-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #d4af37; 
-    letter-spacing: 1px;
-}
-
-.stylish-recent-work .stylish-gold-line {
-    width: 60px;
-    height: 2px;
-    background: #d4af37;
-}
-
-/* FIX: Image Frame Taller (Lambi) Layout Setup */
-.stylish-image-frame {
-    border: 1.5px solid #d4af37; 
-    border-radius: 12px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #050811;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-}
-
-.stylish-image-frame img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 20; /* Made image ratio taller (lambi) as requested */
-    min-height: 480px;     /* Desktop scaling safe check parameter */
-    object-fit: cover;
-    display: block;
-    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.stylish-work-row:hover .stylish-image-frame img {
-    transform: scale(1.03); 
-}
-
-/* Typography Content Styling */
-.stylish-content-box .content-mini-tag {
-    color: #d4af37;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    display: block;
-}
-
-.stylish-content-box .service-display-title {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: #ffffff;
-    line-height: 1.3;
-}
-
-.stylish-content-box .gold-serif {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    color: #d4af37;
-    font-weight: 400;
-}
-
-.stylish-content-box .service-main-para {
-    color: #a0aec0;
-    font-size: 0.95rem;
-    line-height: 1.8; /* Increased spacing for larger content block readability */
-    text-align: justify;
-    font-weight: 300;
-}
-
-/* Pointers Area */
-.stylish-pointers-block .pointers-title {
-    color: #ffffff;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-.custom-pointers-list li {
-    font-size: 0.92rem;
-    color: #e2e8f0;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 400;
-}
-
-.custom-pointers-list li i {
-    font-size: 1rem;
-    width: 20px;
-    text-align: center;
-}
-
-/* Enquire Now Button */
-.btn-stylish-enquire {
-    background-color: #d4af37;
-    color: #050811 !important;
-    font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    padding: 12px 32px;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid #d4af37;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-stylish-enquire:hover {
-    background-color: transparent;
-    color: #d4af37 !important;
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
-}
-
-@media (max-width: 991px) {
-    .stylish-recent-work .section-display-heading {
-        font-size: 2.3rem;
-    }
-    .stylish-content-box .service-display-title {
-        font-size: 1.8rem;
-    }
-    .stylish-image-frame {
-        margin-bottom: 10px;
-    }
-    .stylish-image-frame img {
-        min-height: auto; /* Fluid adjustment for mobile viewing */
-        aspect-ratio: 4 / 5;
-    }
-}
-</style>
-
-
-
-
-
-
+<!-- ============================================================== -->
+<!-- RECENT WORK SECTION END -->
+<!-- ============================================================== -->
 
 
 
@@ -1564,7 +2131,7 @@
             <div class="row g-4 justify-content-between">
                 <div class="col-lg-3 col-md-6">
                     <div class="mb-3">
-                        <img src="logo.png" alt="Lucky Band Logo" height="50">
+                        <img src="logo.png" alt="Lucky Band Logo" height="80">
                     </div>
                     <p class="footer-text pe-lg-2">
                         We turn grand celebrations into majestic realities. Specializing in elite wedding bands, luxury processions, high-end thematic entries, and live orchestras.
